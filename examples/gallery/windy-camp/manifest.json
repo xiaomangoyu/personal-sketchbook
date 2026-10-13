@@ -1,0 +1,212 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "风把山顶帐篷吹歪了一点",
+  "seed": 601,
+  "size": [
+    1440,
+    1000
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "name": "大片清蓝色的天空",
+      "visible": true,
+      "bounds": [
+        33,
+        41,
+        1395,
+        719
+      ],
+      "file": "layers/sky.png",
+      "sha256": "307ed836efda573e4fcee977197e907564e4b9bc4e346555b5b71d592f1643ef"
+    },
+    {
+      "id": "wind-clouds",
+      "name": "被风拉长的云",
+      "visible": true,
+      "bounds": [
+        144,
+        171,
+        1096,
+        372
+      ],
+      "file": "layers/wind-clouds.png",
+      "sha256": "0553f66d3783e99f8340066de0b84cf885fb96a05baed13afc8b874efaaaf668"
+    },
+    {
+      "id": "distant-ridge",
+      "name": "层叠的远山",
+      "visible": true,
+      "bounds": [
+        52,
+        494,
+        1376,
+        771
+      ],
+      "file": "layers/distant-ridge.png",
+      "sha256": "e9ba0d9a859049b90d9f789519d7b26ebe1003aeb0cc174ff3076e6fd2dc01cb"
+    },
+    {
+      "id": "near-ridge",
+      "name": "近处松绿山脊",
+      "visible": true,
+      "bounds": [
+        52,
+        628,
+        1376,
+        850
+      ],
+      "file": "layers/near-ridge.png",
+      "sha256": "2adaf42ce21e6645a2b8d9d04168e76a796194103712f847cc1d637ceec31471"
+    },
+    {
+      "id": "summit",
+      "name": "迎风的山顶草地",
+      "visible": true,
+      "bounds": [
+        36,
+        744,
+        1414,
+        970
+      ],
+      "file": "layers/summit.png",
+      "sha256": "27d7402719c90548b7a2c40f897ed952c6436292f855519aaf6bd2b37bf64d4a"
+    },
+    {
+      "id": "footpath",
+      "name": "爬上山顶的小路",
+      "visible": true,
+      "bounds": [
+        190,
+        817,
+        641,
+        957
+      ],
+      "file": "layers/footpath.png",
+      "sha256": "564faa28aea6a795fb389541e557ebf1376cc0864d28e39d984585ea99dd4af5"
+    },
+    {
+      "id": "tent-shadow",
+      "name": "帐篷压住的草与投影",
+      "visible": true,
+      "bounds": [
+        748,
+        768,
+        1375,
+        869
+      ],
+      "file": "layers/tent-shadow.png",
+      "sha256": "06590a3d945d08155710796ab9bd05dcba176d342d22b72efa9eefbc095e838d"
+    },
+    {
+      "id": "tent",
+      "name": "被风推向一侧的橘红帐篷",
+      "visible": true,
+      "bounds": [
+        762,
+        505,
+        1314,
+        818
+      ],
+      "file": "layers/tent.png",
+      "sha256": "f94ada2da10a32a0f21fc28f9df3f71926beb77100f9e3d47e729160bbb7bcd6"
+    },
+    {
+      "id": "guy-lines",
+      "name": "绷紧的风绳和地钉",
+      "visible": true,
+      "bounds": [
+        648,
+        508,
+        1380,
+        895
+      ],
+      "file": "layers/guy-lines.png",
+      "sha256": "edd57ed0f5d4b04b57c6871b98b92c8eeb59608e2ac47ce045c27fadf6fd9b8d"
+    },
+    {
+      "id": "wind-ribbon",
+      "name": "山风中翘起的一小条布",
+      "visible": true,
+      "bounds": [
+        977,
+        486,
+        1106,
+        525
+      ],
+      "file": "layers/wind-ribbon.png",
+      "sha256": "1b6ccb270315e806445455b101f77d8a4a8e9bb3f59bd348e46082cc95c5d8cd"
+    },
+    {
+      "id": "blanket",
+      "name": "门口卷起的毯子",
+      "visible": true,
+      "bounds": [
+        881,
+        769,
+        1006,
+        815
+      ],
+      "file": "layers/blanket.png",
+      "sha256": "993fc447fa75cc316a7923c43404b1b928e205e786490dbfced072bcc2c2c776"
+    },
+    {
+      "id": "weekend-things",
+      "name": "草地上的保温瓶与素描本",
+      "visible": true,
+      "bounds": [
+        566,
+        750,
+        766,
+        901
+      ],
+      "file": "layers/weekend-things.png",
+      "sha256": "56233557012294768f93990ccaf4b0d60bacf65239b128ec5c8763059ab65134"
+    },
+    {
+      "id": "wind-grasses",
+      "name": "统一朝向的草茎",
+      "visible": true,
+      "bounds": [
+        100,
+        769,
+        1382,
+        952
+      ],
+      "file": "layers/wind-grasses.png",
+      "sha256": "b342fa7f6485d7c594e6bdbbcddd2b8f95262494b443683c011b83d5a277c177"
+    },
+    {
+      "id": "distant-birds",
+      "name": "山谷上空的两只小鸟",
+      "visible": true,
+      "bounds": [
+        569,
+        423,
+        661,
+        458
+      ],
+      "file": "layers/distant-birds.png",
+      "sha256": "1d8c412791cc8e1aa1a511943d5ed691292b79f902d5d2e742d20881391e6127"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "922643e87e39cfb842a5d445b7edd73ae32ae49d34d16e3730d076e5cb13e23a",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "c885271e57c5bf0877cb0a316f8f260bb29cc1ee97cce08870ab7dd1c64f5256",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

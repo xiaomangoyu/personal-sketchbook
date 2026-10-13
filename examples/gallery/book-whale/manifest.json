@@ -1,0 +1,290 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "旧书里游出一条鲸鱼",
+  "seed": 314,
+  "size": [
+    1400,
+    1100
+  ],
+  "layers": [
+    {
+      "id": "sea-air",
+      "name": "从纸上漫出的淡蓝水色",
+      "visible": true,
+      "bounds": [
+        156,
+        133,
+        1222,
+        752
+      ],
+      "file": "layers/sea-air.png",
+      "sha256": "c3ac577104529c7572c357d6ba057725fd6d2532908a958f7604c14ec1824d2e"
+    },
+    {
+      "id": "rising-currents",
+      "name": "由书脊向上卷起的水流",
+      "visible": true,
+      "bounds": [
+        579,
+        407,
+        891,
+        831
+      ],
+      "file": "layers/rising-currents.png",
+      "sha256": "de35da6a0c4ccf02b0ad7d56bc45bec622f7fc5cc9f6ebcdc25d84b715570b51"
+    },
+    {
+      "id": "loose-page",
+      "name": "被水流翻起的一页",
+      "visible": true,
+      "bounds": [
+        875,
+        549,
+        1086,
+        698
+      ],
+      "file": "layers/loose-page.png",
+      "sha256": "6a48b2d2d50fc9dcd3c8b42a4bacd81c42264c769accf793ffe193d69cbb8c18"
+    },
+    {
+      "id": "whale-body",
+      "name": "上游的座头鲸",
+      "visible": true,
+      "bounds": [
+        313,
+        151,
+        1208,
+        554
+      ],
+      "file": "layers/whale-body.png",
+      "sha256": "dc4b85ba6064b80513638344cd307314ad8ad3e6dddcfba5bc129b39de95ccb1"
+    },
+    {
+      "id": "whale-throat",
+      "name": "鲸腹浅色与喉沟",
+      "visible": true,
+      "bounds": [
+        340,
+        432,
+        732,
+        548
+      ],
+      "file": "layers/whale-throat.png",
+      "sha256": "92bcf313dae9b7e943f002dae9de3c45040f87ed9211ef8e22fc116c3cba9979"
+    },
+    {
+      "id": "whale-face",
+      "name": "眼睛、嘴角与头部小结节",
+      "visible": true,
+      "bounds": [
+        322,
+        332,
+        617,
+        477
+      ],
+      "file": "layers/whale-face.png",
+      "sha256": "3a8a1202cbe3e5d3c011c072243a0a9e39955f0707fb053348f9e27f01b8bf6a"
+    },
+    {
+      "id": "dorsal-fin",
+      "name": "小背鳍",
+      "visible": true,
+      "bounds": [
+        802,
+        232,
+        891,
+        291
+      ],
+      "file": "layers/dorsal-fin.png",
+      "sha256": "81ba92da748a9b03c229e3ca03c63c50307268a9993853e47e0533e59c0732c8"
+    },
+    {
+      "id": "whale-flipper",
+      "name": "长胸鳍",
+      "visible": true,
+      "bounds": [
+        514,
+        438,
+        707,
+        681
+      ],
+      "file": "layers/whale-flipper.png",
+      "sha256": "fe97e9eb971a7db464231ba8cc754fd3e3223117f37030fac6eb328d1d481aff"
+    },
+    {
+      "id": "whale-skin",
+      "name": "沿身体方向的细痕",
+      "visible": true,
+      "bounds": [
+        388,
+        285,
+        878,
+        532
+      ],
+      "file": "layers/whale-skin.png",
+      "sha256": "d2fa5f8619869f322f927231fcc8a9e8acc4611882b4b712eb7adf1ddc452a4c"
+    },
+    {
+      "id": "book-shadow",
+      "name": "书本投影",
+      "visible": true,
+      "bounds": [
+        288,
+        889,
+        1218,
+        1032
+      ],
+      "file": "layers/book-shadow.png",
+      "sha256": "009d49a576e8d102302777bdac193bfd11e82cfaa36b1725c38f78846934c12b"
+    },
+    {
+      "id": "book-cover",
+      "name": "旧书的朱红布面封皮",
+      "visible": true,
+      "bounds": [
+        217,
+        687,
+        1203,
+        1014
+      ],
+      "file": "layers/book-cover.png",
+      "sha256": "b966962961e96774c8eb2e83bccc8bdf51fcb6212fe4fd37e3fc0f43ee17589a"
+    },
+    {
+      "id": "page-stack",
+      "name": "书页厚度",
+      "visible": true,
+      "bounds": [
+        273,
+        788,
+        1159,
+        982
+      ],
+      "file": "layers/page-stack.png",
+      "sha256": "4d57f837c2eb9ac2c5c76ec51cda301f9fa60cdc9453b1972c6f9d496479821c"
+    },
+    {
+      "id": "open-pages",
+      "name": "张开的左右书页",
+      "visible": true,
+      "bounds": [
+        262,
+        692,
+        1157,
+        950
+      ],
+      "file": "layers/open-pages.png",
+      "sha256": "ab2b0045d47585f98cfa4a6b9541c3f832191b2194acff7df50be6ab9b7e556a"
+    },
+    {
+      "id": "page-lines",
+      "name": "书页上的行迹",
+      "visible": true,
+      "bounds": [
+        324,
+        747,
+        1094,
+        894
+      ],
+      "file": "layers/page-lines.png",
+      "sha256": "dcb240cc838aacf29d66c6988de89204e3e1472c472de51cac5c62413af4940c"
+    },
+    {
+      "id": "bookmark",
+      "name": "从书脊垂出的布书签",
+      "visible": true,
+      "bounds": [
+        699,
+        918,
+        756,
+        1040
+      ],
+      "file": "layers/bookmark.png",
+      "sha256": "4b7a2b34431c9551cad368ce6a723204f30a07037532deb0ea5206ac6f08dc1d"
+    },
+    {
+      "id": "water-at-spine",
+      "name": "从书页升起的水花",
+      "visible": true,
+      "bounds": [
+        621,
+        722,
+        813,
+        861
+      ],
+      "file": "layers/water-at-spine.png",
+      "sha256": "f47e524caa92296941157b656b7fe94e340f31de5884dae26c967ed1b9e47013"
+    },
+    {
+      "id": "gold-fish-0",
+      "name": "随水流跃起的小鱼",
+      "visible": true,
+      "bounds": [
+        873,
+        484,
+        929,
+        525
+      ],
+      "file": "layers/gold-fish-0.png",
+      "sha256": "066e2dfd54597f1d8ebb1163bb3e9c61524199f370aad26584e7413de46d5012"
+    },
+    {
+      "id": "gold-fish-1",
+      "name": "随水流跃起的小鱼",
+      "visible": true,
+      "bounds": [
+        983,
+        441,
+        1026,
+        472
+      ],
+      "file": "layers/gold-fish-1.png",
+      "sha256": "ef982936e94f8864cf3413716cc80ff3b7c1470aab9f2320f215e1b5eaba1f91"
+    },
+    {
+      "id": "gold-fish-2",
+      "name": "随水流跃起的小鱼",
+      "visible": true,
+      "bounds": [
+        941,
+        521,
+        975,
+        547
+      ],
+      "file": "layers/gold-fish-2.png",
+      "sha256": "4ee7c616c9c43fab13c7b5af97fed3ca10417bdc26cfddacc0718e91e736341a"
+    },
+    {
+      "id": "water-bubbles",
+      "name": "少量水泡",
+      "visible": true,
+      "bounds": [
+        225,
+        246,
+        967,
+        712
+      ],
+      "file": "layers/water-bubbles.png",
+      "sha256": "7140667d2b343e8b33384bc52e672508f4dce4e611a1161361df9f3e652ab415"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "4dfce9a33354ea603ca7a4afaf3e4172946e67086a60aa99c2c1196566bfa9d4",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "c885271e57c5bf0877cb0a316f8f260bb29cc1ee97cce08870ab7dd1c64f5256",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

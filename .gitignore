@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+output/
+build/
+.review/
+examples/gallery/*/layers/
+examples/edits/*/layers/

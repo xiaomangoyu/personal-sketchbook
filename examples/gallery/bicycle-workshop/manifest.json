@@ -1,0 +1,199 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "修车铺午后的最后一束光",
+  "seed": 18301,
+  "size": [
+    1400,
+    1100
+  ],
+  "layers": [
+    {
+      "id": "workshop-walls",
+      "name": "旧修车铺的墙和地面",
+      "visible": true,
+      "bounds": [
+        34,
+        80,
+        1367,
+        1082
+      ],
+      "file": "layers/workshop-walls.png",
+      "sha256": "c9145be14123fe2fc69741e5e14bd82bbc29928e51bbb5fd5dd11ec47a361837"
+    },
+    {
+      "id": "late-sunlight",
+      "name": "斜照进来的最后一束光",
+      "visible": true,
+      "bounds": [
+        172,
+        117,
+        1299,
+        1039
+      ],
+      "file": "layers/late-sunlight.png",
+      "sha256": "43f247764ebcf8abcbbf7d1ef4c68066fffbc5472a4c1f357e2c202606b9773a"
+    },
+    {
+      "id": "high-window",
+      "name": "高窗",
+      "visible": true,
+      "bounds": [
+        88,
+        135,
+        376,
+        362
+      ],
+      "file": "layers/high-window.png",
+      "sha256": "e1d694f18b899a777324873bd0be4dd28620faf4531f197a0c2eda6195a4413d"
+    },
+    {
+      "id": "tool-board",
+      "name": "挂着常用工具的木板",
+      "visible": true,
+      "bounds": [
+        468,
+        161,
+        1123,
+        416
+      ],
+      "file": "layers/tool-board.png",
+      "sha256": "a9e7ef6f9f01e75fa204704a05acd45e557e89864c0b55f2f225374498e52d9d"
+    },
+    {
+      "id": "hanging-tools",
+      "name": "扳手、钳子和手锯",
+      "visible": true,
+      "bounds": [
+        535,
+        205,
+        1071,
+        372
+      ],
+      "file": "layers/hanging-tools.png",
+      "sha256": "15ffce25f51910e910dd23162fcd7600a0170f808baa61dd54a645e216401e98"
+    },
+    {
+      "id": "wooden-workbench",
+      "name": "磨旧的修车工作台",
+      "visible": true,
+      "bounds": [
+        115,
+        406,
+        1280,
+        903
+      ],
+      "file": "layers/wooden-workbench.png",
+      "sha256": "ef9decedc51e4ec663a1bd85eb6778df5a4fb8afb7777a6dbf78e0233e5d4014"
+    },
+    {
+      "id": "bench-objects",
+      "name": "油壶、旧杯和一块布",
+      "visible": true,
+      "bounds": [
+        305,
+        373,
+        1189,
+        469
+      ],
+      "file": "layers/bench-objects.png",
+      "sha256": "c6fd633ad27437e1c7db2f5a1649d869ef6aac5d750a0ec8fc39bb64617ff180"
+    },
+    {
+      "id": "bicycle-ground-shadow",
+      "name": "自行车在地上的投影",
+      "visible": true,
+      "bounds": [
+        146,
+        957,
+        1339,
+        1064
+      ],
+      "file": "layers/bicycle-ground-shadow.png",
+      "sha256": "1e4a853b9ab85eefcf8a528e828475dfac427f5f21eb3b95a42b2088c68d1e50"
+    },
+    {
+      "id": "bicycle-wheels",
+      "name": "两只轮胎、轮辋和交叉辐条",
+      "visible": true,
+      "bounds": [
+        126,
+        546,
+        1284,
+        1024
+      ],
+      "file": "layers/bicycle-wheels.png",
+      "sha256": "6d6208226c1a1406639282fb25f77ac35f2c2b0d8cb2b9dbee07504d0cca5eb3"
+    },
+    {
+      "id": "bicycle-frame",
+      "name": "暗红色钻石车架",
+      "visible": true,
+      "bounds": [
+        358,
+        488,
+        1048,
+        803
+      ],
+      "file": "layers/bicycle-frame.png",
+      "sha256": "6a0096ecb622d5da13e14bb45df6a8ca554e0443360041b55a22c7186bc4ee90"
+    },
+    {
+      "id": "chain-and-pedals",
+      "name": "链条、牙盘和踏板",
+      "visible": true,
+      "bounds": [
+        332,
+        732,
+        708,
+        859
+      ],
+      "file": "layers/chain-and-pedals.png",
+      "sha256": "cd8d32aa5019d9f7848d162f6086417a58c581040621b114e3b01642b3eb9ea4"
+    },
+    {
+      "id": "saddle-and-handlebars",
+      "name": "皮鞍座和弯把",
+      "visible": true,
+      "bounds": [
+        508,
+        434,
+        1001,
+        635
+      ],
+      "file": "layers/saddle-and-handlebars.png",
+      "sha256": "424816cdc2af922448136e1538039ca71375a20c2d74053c5fa193dbcbdd36fa"
+    },
+    {
+      "id": "working-marks",
+      "name": "用旧的痕迹和支架",
+      "visible": true,
+      "bounds": [
+        271,
+        522,
+        971,
+        1052
+      ],
+      "file": "layers/working-marks.png",
+      "sha256": "dd75e4f0e785c8318bf69baeedc63c19c4c004234f73091aa1b1742a88d576b4"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "90db1bca807cc9eb1abdff3e3b61ce381ee8cb1438a2febdb577663b3f98547a",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "c885271e57c5bf0877cb0a316f8f260bb29cc1ee97cce08870ab7dd1c64f5256",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

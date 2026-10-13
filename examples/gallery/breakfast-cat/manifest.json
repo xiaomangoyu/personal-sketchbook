@@ -1,0 +1,225 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "猫把早餐纸袋当成了窝",
+  "seed": 121,
+  "size": [
+    1400,
+    1100
+  ],
+  "layers": [
+    {
+      "id": "morning-light",
+      "name": "早晨墙面与桌面",
+      "visible": true,
+      "bounds": [
+        55,
+        84,
+        1368,
+        1021
+      ],
+      "file": "layers/morning-light.png",
+      "sha256": "974654ae3f03a0d5a4933d328abbad3b264ed7ea562d97178b0f2b7ca1861c7e"
+    },
+    {
+      "id": "blue-cloth",
+      "name": "前景蓝色格纹餐巾",
+      "visible": true,
+      "bounds": [
+        76,
+        705,
+        619,
+        1048
+      ],
+      "file": "layers/blue-cloth.png",
+      "sha256": "98826f8ce8fc95b93cc03f6155e9b7527eb1a23de93544d3de0136b86a0a6f16"
+    },
+    {
+      "id": "bag-ground-shadow",
+      "name": "纸袋接触投影",
+      "visible": true,
+      "bounds": [
+        415,
+        816,
+        1118,
+        974
+      ],
+      "file": "layers/bag-ground-shadow.png",
+      "sha256": "41b165f5e73e9ebdba1d079f4816f64a59c74effee8ea2063b55affaa4d5276a"
+    },
+    {
+      "id": "tea-mug",
+      "name": "早餐茶杯",
+      "visible": true,
+      "bounds": [
+        156,
+        373,
+        426,
+        679
+      ],
+      "file": "layers/tea-mug.png",
+      "sha256": "938b32ebcce5e53737aa7aa94fdf23e4d5bc15955b4d7a01c8b9ce5dee904af4"
+    },
+    {
+      "id": "bag-rear-rim",
+      "name": "纸袋背面与袋口",
+      "visible": true,
+      "bounds": [
+        427,
+        465,
+        895,
+        647
+      ],
+      "file": "layers/bag-rear-rim.png",
+      "sha256": "edf0a2db4df629422cd32116ec7edcd912e79cc92a88100720967a951ab41e4e"
+    },
+    {
+      "id": "cat-head",
+      "name": "虎斑猫头部",
+      "visible": true,
+      "bounds": [
+        457,
+        171,
+        848,
+        555
+      ],
+      "file": "layers/cat-head.png",
+      "sha256": "d5f627de49c692401149c45d6ee73f51f70c10b214bec0710c0d0d8133af449e"
+    },
+    {
+      "id": "cat-ears",
+      "name": "耳朵内侧",
+      "visible": true,
+      "bounds": [
+        482,
+        205,
+        790,
+        316
+      ],
+      "file": "layers/cat-ears.png",
+      "sha256": "d12c2f25dd2f259c39736dbdd1a993499f6755d0681b006c8ad5434763f745ac"
+    },
+    {
+      "id": "cat-tabby-markings",
+      "name": "随头部转向的虎斑",
+      "visible": true,
+      "bounds": [
+        468,
+        249,
+        839,
+        463
+      ],
+      "file": "layers/cat-tabby-markings.png",
+      "sha256": "99a637d6e4d5c6d71240e0a94e804e8a286f5422cabb94fbcf309399d30b15f4"
+    },
+    {
+      "id": "cat-face",
+      "name": "绿眼睛与奶油色鼻口",
+      "visible": true,
+      "bounds": [
+        509,
+        337,
+        777,
+        545
+      ],
+      "file": "layers/cat-face.png",
+      "sha256": "019df13fa41513f6c3b0adb667c4b0968204da109bd2707d9773fb5a922d48f4"
+    },
+    {
+      "id": "cat-fur-lines",
+      "name": "面颊短毛与胡须",
+      "visible": true,
+      "bounds": [
+        422,
+        309,
+        884,
+        542
+      ],
+      "file": "layers/cat-fur-lines.png",
+      "sha256": "68ee26242ebe297d822f3b948a3fb086e8eaabb660bf2b63327163606b612224"
+    },
+    {
+      "id": "bag-front",
+      "name": "皱纸袋正面",
+      "visible": true,
+      "bounds": [
+        425,
+        547,
+        896,
+        921
+      ],
+      "file": "layers/bag-front.png",
+      "sha256": "316031da7a92dec042e2ce0f4a899a4de1170c7c9bfbc86e9e13130329654541"
+    },
+    {
+      "id": "cat-paw",
+      "name": "搭在纸袋外的一只前爪",
+      "visible": true,
+      "bounds": [
+        693,
+        491,
+        792,
+        678
+      ],
+      "file": "layers/cat-paw.png",
+      "sha256": "7ec56282e02a1ed6914f864e47f87709de04da48c6777de5ecbae0c556d0495c"
+    },
+    {
+      "id": "breakfast-plate",
+      "name": "右侧早餐碟",
+      "visible": true,
+      "bounds": [
+        890,
+        719,
+        1255,
+        884
+      ],
+      "file": "layers/breakfast-plate.png",
+      "sha256": "4c7d1c44e258109d3ee958ee12d6984cc5a41913810b5a8bd95ea925dbe3a7c5"
+    },
+    {
+      "id": "croissant",
+      "name": "掰开前的牛角包",
+      "visible": true,
+      "bounds": [
+        930,
+        690,
+        1210,
+        811
+      ],
+      "file": "layers/croissant.png",
+      "sha256": "548559709f33abbf60bb89baf9a07e2674053f5e36eef11ce94a839fe2fdb8d6"
+    },
+    {
+      "id": "breakfast-crumbs",
+      "name": "掉在桌上的碎屑",
+      "visible": true,
+      "bounds": [
+        349,
+        836,
+        1126,
+        917
+      ],
+      "file": "layers/breakfast-crumbs.png",
+      "sha256": "9e840252d7ebce522887c0c5138820611aa4d74d3d4ad67b5afa8c9a0f13e9ed"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "31c903b6c51a7e855480f9a905a9ef96f625372e8d3301d9dab80930467ae64b",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "c885271e57c5bf0877cb0a316f8f260bb29cc1ee97cce08870ab7dd1c64f5256",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

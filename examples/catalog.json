@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "scenes": [
+    {"id":"breakfast-cat","title":"猫把早餐纸袋当成了窝","en":"A bag, a cat, a slow morning","medium":"铅笔 · 淡彩","prompt":"画一只把早餐纸袋当成窝的小猫，只露出脑袋和一只爪。","generator":"examples/generators/breakfast_cat.py","hero":true},
+    {"id":"rainy-cafe","title":"雨停前的街角咖啡店","en":"Coffee while the rain passes","medium":"钢笔 · 淡彩","prompt":"画一间雨里的街角咖啡店，暖灯亮着，门口撑着一把伞。","generator":"examples/generators/rainy_cafe.py","hero":false},
+    {"id":"orange-market","title":"周末市场的橘子摊","en":"One orange escaped","medium":"蜡笔 · 铅笔","prompt":"画一个热闹的橘子摊，一只橘子悄悄滚出了果箱。","generator":"examples/generators/orange_market.py","hero":true},
+    {"id":"windy-camp","title":"风把山顶帐篷吹歪了一点","en":"A windy little weekend","medium":"蜡笔 · 铅笔","prompt":"画山顶有风的露营地，帐篷偏在一旁，草和云都朝同一个方向。","generator":"examples/generators/windy_camp.py","hero":false},
+    {"id":"book-whale","title":"旧书里游出一条鲸鱼","en":"A whale between the pages","medium":"淡彩 · 钢笔","prompt":"画一条从翻开的旧书里游出来的鲸鱼，让书页像海浪一样托住它。","generator":"examples/generators/book_whale.py","hero":true},
+    {"id":"bicycle-workshop","title":"修车铺午后的最后一束光","en":"The last light in the workshop","medium":"钢笔 · 排线","prompt":"画修车铺里一辆旧自行车的局部，一束暖光照到车轮和木工作台。","generator":"examples/generators/bicycle_workshop.py","hero":false}
+  ]
+}

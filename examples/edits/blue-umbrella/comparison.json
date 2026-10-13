@@ -1,0 +1,28 @@
+{
+  "changed_object": "umbrella",
+  "changed_marks": [
+    "canopy-base-color",
+    "canopy-left-panel-color",
+    "canopy-right-panel-color"
+  ],
+  "unchanged_layers": [
+    "awning",
+    "cafe-building",
+    "coffee-sign",
+    "door",
+    "last-rain",
+    "outside-stool",
+    "rain-tree",
+    "rainy-atmosphere",
+    "rosemary-pot",
+    "waiting-person",
+    "warm-windows",
+    "wet-street",
+    "window-reflections"
+  ],
+  "unchanged_layer_count": 13,
+  "verified": true,
+  "method": "SHA-256 comparison of exported object PNGs from the same renderer and runtime",
+  "before": "examples/gallery/rainy-cafe/manifest.json",
+  "after": "examples/edits/blue-umbrella/manifest.json"
+}

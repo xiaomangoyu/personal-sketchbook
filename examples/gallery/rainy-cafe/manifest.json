@@ -1,0 +1,212 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "雨停前的街角咖啡店",
+  "seed": 71013,
+  "size": [
+    1400,
+    1000
+  ],
+  "layers": [
+    {
+      "id": "rainy-atmosphere",
+      "name": "雨天的空气",
+      "visible": true,
+      "bounds": [
+        29,
+        67,
+        1331,
+        749
+      ],
+      "file": "layers/rainy-atmosphere.png",
+      "sha256": "429718435820164a06b6e007dc8705ea802c001118fdc88a173a294ab40c6ad8"
+    },
+    {
+      "id": "wet-street",
+      "name": "雨后路面",
+      "visible": true,
+      "bounds": [
+        15,
+        582,
+        1385,
+        953
+      ],
+      "file": "layers/wet-street.png",
+      "sha256": "50b5b0c41bbc9b7f4b57f5826d15318f091f9fab7526ddc67ba8a8e37100ed69"
+    },
+    {
+      "id": "cafe-building",
+      "name": "街角咖啡店",
+      "visible": true,
+      "bounds": [
+        193,
+        168,
+        960,
+        673
+      ],
+      "file": "layers/cafe-building.png",
+      "sha256": "488a13df4e569ff13b63936f800f817f1ec66d853a7903c96081cd4ac7f22965"
+    },
+    {
+      "id": "warm-windows",
+      "name": "暖灯和玻璃窗",
+      "visible": true,
+      "bounds": [
+        241,
+        308,
+        583,
+        588
+      ],
+      "file": "layers/warm-windows.png",
+      "sha256": "14ac52e877082aa0b28a044ade83a736a870467505743ec4542a33d89a97097d"
+    },
+    {
+      "id": "door",
+      "name": "绿色木门",
+      "visible": true,
+      "bounds": [
+        598,
+        303,
+        803,
+        665
+      ],
+      "file": "layers/door.png",
+      "sha256": "306a55027f8f10ae7474c7bb859fe1e343a7a01a41e11540a15d22520b4d8ed0"
+    },
+    {
+      "id": "awning",
+      "name": "褪色陶红遮雨篷",
+      "visible": true,
+      "bounds": [
+        162,
+        171,
+        894,
+        366
+      ],
+      "file": "layers/awning.png",
+      "sha256": "2b2244207c5107e941c1f8dd50f941129f58f7424e87f30c58d9ed4718484f9e"
+    },
+    {
+      "id": "coffee-sign",
+      "name": "吊牌上的杯子",
+      "visible": true,
+      "bounds": [
+        942,
+        291,
+        1051,
+        455
+      ],
+      "file": "layers/coffee-sign.png",
+      "sha256": "d202289c64606b745a56655a74720ce1184f12a4c0f2c40a65f3ea7201de8bb2"
+    },
+    {
+      "id": "rosemary-pot",
+      "name": "门口的迷迭香",
+      "visible": true,
+      "bounds": [
+        804,
+        494,
+        892,
+        645
+      ],
+      "file": "layers/rosemary-pot.png",
+      "sha256": "4148bbf13cf9c4c677c32d2361bec533ba4f225e5a3253d6f5b6c82995de8902"
+    },
+    {
+      "id": "outside-stool",
+      "name": "没有收进去的小圆凳",
+      "visible": true,
+      "bounds": [
+        274,
+        616,
+        378,
+        707
+      ],
+      "file": "layers/outside-stool.png",
+      "sha256": "f49b1d6f5c0752d7f5c07e3b37f598383040bcc415c528b9b8963f997fed81d1"
+    },
+    {
+      "id": "window-reflections",
+      "name": "暖光在路面上碎开",
+      "visible": true,
+      "bounds": [
+        266,
+        714,
+        742,
+        861
+      ],
+      "file": "layers/window-reflections.png",
+      "sha256": "3be610cc4248079783e05d7afa15f6e1527e55817f3d102aff53a3e16ef63b02"
+    },
+    {
+      "id": "waiting-person",
+      "name": "伞下等雨停的人",
+      "visible": true,
+      "bounds": [
+        991,
+        621,
+        1137,
+        846
+      ],
+      "file": "layers/waiting-person.png",
+      "sha256": "3efd7725121967a713dbeed4983a42c68145c96983670d2b66480c72b424fc6b"
+    },
+    {
+      "id": "umbrella",
+      "name": "可单独改色的雨伞",
+      "visible": true,
+      "bounds": [
+        905,
+        496,
+        1205,
+        718
+      ],
+      "file": "layers/umbrella.png",
+      "sha256": "7b051584c132a9a9d02d6196c2f3e54f931b6d2b8f1a4da8ce176a954ae056a8"
+    },
+    {
+      "id": "rain-tree",
+      "name": "伸进画面的枝叶",
+      "visible": true,
+      "bounds": [
+        68,
+        108,
+        272,
+        274
+      ],
+      "file": "layers/rain-tree.png",
+      "sha256": "53a52dedcdbeb8cdf6a1001f46a32e11b4e93c8c59e56579385c62bedbaa0fb5"
+    },
+    {
+      "id": "last-rain",
+      "name": "最后几滴雨",
+      "visible": true,
+      "bounds": [
+        109,
+        91,
+        1263,
+        893
+      ],
+      "file": "layers/last-rain.png",
+      "sha256": "e1a5a1e8291c82dab1af7ef77119bf84d77483b4ecb9c638b532fde9ab60d1e7"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "fe4a52f48401221eacc460aec62f59f957c19800fdc0c37436cb18e52f5173de",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "c885271e57c5bf0877cb0a316f8f260bb29cc1ee97cce08870ab7dd1c64f5256",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

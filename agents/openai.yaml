@@ -1,0 +1,4 @@
+interface:
+  display_name: "随手画 · Personal Sketchbook"
+  short_description: "用可编辑的程序化笔触画蜡笔与钢笔淡彩，重视构图、轻重和纸面质感"
+  default_prompt: "用 $personal-sketchbook 画一张有个人手感的画，保留我指定的内容，并给我图片和可修改的源文件。"

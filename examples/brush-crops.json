@@ -1,0 +1,7 @@
+[
+  {"kind": "ink", "scene": "bicycle-workshop", "object": "saddle-and-handlebars", "box": [835, 412, 1015, 593]},
+  {"kind": "pencil", "scene": "breakfast-cat", "object": "cat-paw", "box": [685, 482, 818, 699]},
+  {"kind": "wax", "scene": "orange-market", "object": "front-oranges", "box": [300, 570, 555, 780]},
+  {"kind": "wash", "scene": "rainy-cafe", "object": "umbrella", "box": [903, 493, 1213, 651]},
+  {"kind": "hatch", "scene": "bicycle-workshop", "object": "wooden-workbench", "box": [1000, 430, 1300, 665]}
+]

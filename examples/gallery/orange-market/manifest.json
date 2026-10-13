@@ -1,0 +1,225 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "周末市场的橘子摊",
+  "seed": 307,
+  "size": [
+    1400,
+    1080
+  ],
+  "layers": [
+    {
+      "id": "market-wall",
+      "name": "阳光下的旧墙",
+      "visible": true,
+      "bounds": [
+        109,
+        150,
+        1256,
+        907
+      ],
+      "file": "layers/market-wall.png",
+      "sha256": "787448548fb0230277831e764e7086d2a192e75c3b12bd2eb85be7b5123329d7"
+    },
+    {
+      "id": "jars",
+      "name": "摊后玻璃罐和纸袋",
+      "visible": true,
+      "bounds": [
+        772,
+        334,
+        1084,
+        490
+      ],
+      "file": "layers/jars.png",
+      "sha256": "07ee586a4c1f5b91802b8270da2b35d17fdb96cb544aa693ad0d77a708488afc"
+    },
+    {
+      "id": "ground-shadow",
+      "name": "摊位投影",
+      "visible": true,
+      "bounds": [
+        103,
+        780,
+        1296,
+        1002
+      ],
+      "file": "layers/ground-shadow.png",
+      "sha256": "7c6ec694492f5a262ec3f80b79024b571898d0604b53130eee9460cca275f3f8"
+    },
+    {
+      "id": "stall-frame",
+      "name": "木制立柱",
+      "visible": true,
+      "bounds": [
+        202,
+        245,
+        1186,
+        926
+      ],
+      "file": "layers/stall-frame.png",
+      "sha256": "1d5f1b5c098c42ee41cf142318037782c1089890c936f2f65a795b4e2c2e1ae7"
+    },
+    {
+      "id": "striped-awning",
+      "name": "绿白条纹遮阳篷",
+      "visible": true,
+      "bounds": [
+        88,
+        129,
+        1250,
+        478
+      ],
+      "file": "layers/striped-awning.png",
+      "sha256": "de4a4f3b66e067c70f3330342dd7a4790bd53837f5d2ea6a0d823d5cb979f2fe"
+    },
+    {
+      "id": "counter",
+      "name": "深色台面和垂下的布",
+      "visible": true,
+      "bounds": [
+        178,
+        670,
+        1219,
+        998
+      ],
+      "file": "layers/counter.png",
+      "sha256": "be96f4963d2ede14d94d6b3c6a51714e87bc920725bd9b07a0da579b96d1e180"
+    },
+    {
+      "id": "back-crate",
+      "name": "后排叠高果箱",
+      "visible": true,
+      "bounds": [
+        594,
+        585,
+        1119,
+        775
+      ],
+      "file": "layers/back-crate.png",
+      "sha256": "3d324052a9b093a60eb8bd16238e6e32afe2624ccb86c97e39b2094c4f2724b9"
+    },
+    {
+      "id": "back-oranges",
+      "name": "高处参差的橘子",
+      "visible": true,
+      "bounds": [
+        633,
+        521,
+        1037,
+        683
+      ],
+      "file": "layers/back-oranges.png",
+      "sha256": "8fdb9f00c4b1610086be4e093799be52bf70cf9562d84085eedd37199dd41137"
+    },
+    {
+      "id": "back-crate-rim",
+      "name": "后箱前挡板",
+      "visible": true,
+      "bounds": [
+        624,
+        622,
+        1034,
+        763
+      ],
+      "file": "layers/back-crate-rim.png",
+      "sha256": "fb25a35f1a3e266ee434f08ae4e1d4a6794ab668f9c83407980c420957532ff1"
+    },
+    {
+      "id": "front-crate",
+      "name": "斜着放的木箱",
+      "visible": true,
+      "bounds": [
+        244,
+        631,
+        723,
+        903
+      ],
+      "file": "layers/front-crate.png",
+      "sha256": "bc06f4651f438af519ba97b69a574ad3046ed99a5dac20d8ba7fdabe49990657"
+    },
+    {
+      "id": "front-oranges",
+      "name": "主角橘子堆",
+      "visible": true,
+      "bounds": [
+        268,
+        572,
+        686,
+        793
+      ],
+      "file": "layers/front-oranges.png",
+      "sha256": "b6d912021d5ef2f17880dbf7296ddcbe967372c3c147578580fe3ed8b7810c28"
+    },
+    {
+      "id": "front-crate-rim",
+      "name": "前箱木条和钉子",
+      "visible": true,
+      "bounds": [
+        338,
+        761,
+        723,
+        903
+      ],
+      "file": "layers/front-crate-rim.png",
+      "sha256": "83f8bb3ee35939f501dc36303f8972d6990aee685b661541bf146604668e3a3d"
+    },
+    {
+      "id": "loose-fruit",
+      "name": "布上刚卖完一袋后留下的橘子",
+      "visible": true,
+      "bounds": [
+        788,
+        757,
+        1001,
+        882
+      ],
+      "file": "layers/loose-fruit.png",
+      "sha256": "021fd1f742c2b535ca6f7d68510ddf4ae28ca2368c9ffabb15aea8b054fbeead"
+    },
+    {
+      "id": "runaway-orange",
+      "name": "滚到摊位外的橘子",
+      "visible": true,
+      "bounds": [
+        992,
+        898,
+        1179,
+        992
+      ],
+      "file": "layers/runaway-orange.png",
+      "sha256": "8298ba6ccb1a7d22eaf9d454fb5dd538539dd078453abbb85feebccf6c4301cc"
+    },
+    {
+      "id": "corner-leaves",
+      "name": "墙角伸出的绿枝",
+      "visible": true,
+      "bounds": [
+        62,
+        526,
+        180,
+        773
+      ],
+      "file": "layers/corner-leaves.png",
+      "sha256": "57517261b63ad150a12e8f4016dbb1b03636f71b124fbedda3e710dce51e499f"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "5dc420029c655cef5c5867176d95dfd3df578fd68fa6302413a5a60b7b247917",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "c885271e57c5bf0877cb0a316f8f260bb29cc1ee97cce08870ab7dd1c64f5256",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}
