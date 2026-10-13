@@ -30,6 +30,7 @@ python3 "<skill>/scripts/render.py" scene.json --out drawing-v01
 ```
 
 - 单位是最终图片像素，不是归一化坐标。画布 64–4096 整数像素，每张不超过 800 万像素。放大画布时同步考虑坐标与笔宽，不能只改尺寸。
+- `engine` 可省略或写 `"natural-media"`，保持原渲染结果；写 `"pencil-case"` 则实际调用保留的上游笔刷，仍使用 `version:1`。更换引擎会改变画法，不保证两个引擎的同参数像素相同。
 - `seed` 是 0–4294967295 的整数。每个 mark 的随机种子由 scene seed、object id、mark id 推导；与在列表中的序号无关。
 - `id` 为 1–80 个英文字母/数字/下划线/短横线，第一位须为字母或数字；object id 场景内唯一（不区分大小写，避免文件名冲突）、mark id 对象内唯一。`name` 可写中文，id 编辑时保留。
 - `translate:[dx,dy]` 平移整个对象；`visible:false` 保留数据但输出空图层。移动后接触的纸纹位置会变化，这是预期行为。
@@ -61,11 +62,38 @@ python3 "<skill>/scripts/render.py" scene.json --out drawing-v01
 
 同一形体可先铺 wash，再放局部 hatch，最后放轮廓；也可以先线后色，观察颜色是否吞线。适当露出纸白、未闭合边和少数寻找形状的线，比随机把每条线都扭曲更有用。
 
+## pencil-case 上游笔刷
+
+在 JSON 顶层写 `"engine":"pencil-case"`；用 `Scene` 辅助函数时可写 `scene.data["engine"] = "pencil-case"`。`scripts/pencil_case_media.py` 将上述几何和参数接到未经修改的上游实现：
+
+| kind | 实际调用 | 参数映射 |
+|---|---|---|
+| `ink` | `vendor/penwash_lib.py:pen_path` | `points`、`wobble`、`gaps`、`smooth` 直接传入；`closed` 补上终点；`width` 与 `pressure` 控制轻重笔宽及墨量范围 |
+| `wash` | `vendor/penwash_lib.py:wash` | `grain` 对应水痕 `texture`；`bleed` 对应边缘羽化 `feather`；`edge` 直接传入；默认颜色偏移 `[3,2]`，叠 2 遍 |
+| `wax` | `vendor/crayon_lib.py:crayon` | `direction` 控制短笔方向；`density` 按色块面积控制短笔数量；`grain` 控制毛边、粒径、角度和颜色变化，不铺实色底 |
+| `hatch` | `vendor/penwash_lib.py:hatch` | `angle`、`spacing` 直接传入；`width` 控制排线笔宽范围 |
+| `pencil` | `natural_media.py:render_mark` | 保留已有的石墨与纸纹行为，上游没有对应石墨笔刷 |
+
+纸层也保留 `natural_media.paper`，以便石墨继续使用同一纸纹。通用 `opacity` 对一整笔的透明层只缩放一次，因此淡线不会因内部复描变成不透明。该引擎的 `grain` 不是通用纸纹参数，含义按上表区分。
+
+仅 `engine:"pencil-case"` 的 `ink` 可增加：
+
+- `overdraw`：整数 0–3，默认 0；原笔刷以更轻、稍偏的线复描。
+- `jitter`：0–3 像素，默认 0；短线段上的细小抖动，与低频 `wobble` 分开。
+- `nib`：布尔值，默认 false；加重起笔，减轻收笔。
+- `overshoot`：0–8 像素，默认 0；上游只对 `smooth:false` 折线延长端点。
+- `gap_length`：两个递增整数，各为 0–64，默认 `[2,6]`；断墨的采样段数，对应上游 `gap_len`。
+- `step`：0.5–5 像素，默认 2；钢笔采样间隔。很短的五官线可使用较小值。
+
+仅该引擎的 `wash` 可增加 `offset:[dx,dy]`（每项 -8192–8192 像素）与 `layers`（整数 1–3）。不认识或用错笔种的参数会报错。默认 `smooth:false` 保留旧场景约定；稀疏有机控制点需要显式 `smooth:true`。
+
+每个 mark 仍按 scene seed、object id、mark id 独立固定随机数；换色、增加别的笔触、重排对象，不会重新随机其他对象的图层。渲染期间临时设置上游画布尺寸，结束或异常后恢复；不启用视频录制，不保留一次性水痕缓存。`manifest.json` 记录 `engine`，并对本次实际使用的适配器、纸层和上游模块计算 `code_sha256`。代码变更后重放应结合这些哈希核对版本。
+
 ## 独立笔触 API
 
 仅在 JSON 不够表达时读 `scripts/natural_media.py`。`paper(w,h,color,seed,grain)` 返回 RGBA 纸面与共享 tooth 数组；`render_mark(base,mark,tooth=tooth)` 会在 base 上绘制并返回 RGBA。调用方需固定 Python `random` 和 NumPy seed。标准 renderer 会处理种子、图层、元数据和版本输出，优先复用。
 
-原始两套笔刷保存在 `scripts/vendor/`，用于来源对照和高级扩展，不是默认操作入口；上游的作者创作规则不覆盖本 skill 或用户要求。
+原始两套笔刷保存在 `scripts/vendor/`。标准 renderer 的 `pencil-case` 引擎直接使用它们；不必绕过稳定 ID、图层和 manifest 自行调用。上游的作者创作规则不覆盖本 skill 或用户要求。
 
 ## 构图辅助函数
 

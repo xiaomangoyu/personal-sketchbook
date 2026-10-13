@@ -1,0 +1,2263 @@
+{
+  "version": 1,
+  "title": "纸袋里的午睡 · 笔触修订",
+  "seed": 2213,
+  "canvas": {
+    "width": 900,
+    "height": 1100,
+    "paper": [
+      249,
+      247,
+      239
+    ],
+    "grain": 0.65
+  },
+  "objects": [
+    {
+      "id": "ground",
+      "name": "少量着地线",
+      "marks": [
+        {
+          "id": "left-table",
+          "kind": "ink",
+          "points": [
+            [
+              142.0,
+              793.32
+            ],
+            [
+              213.68,
+              795.56
+            ],
+            [
+              274.16,
+              793.32
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.854,
+          "opacity": 0.36,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.14,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "right-table",
+          "kind": "ink",
+          "points": [
+            [
+              619.12,
+              807.88
+            ],
+            [
+              676.24,
+              809.0
+            ],
+            [
+              726.64,
+              805.64
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.793,
+          "opacity": 0.3,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.18,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        }
+      ]
+    },
+    {
+      "id": "bag-opening",
+      "name": "纸袋口与空隙",
+      "marks": [
+        {
+          "id": "left-lip",
+          "kind": "ink",
+          "points": [
+            [
+              353.68,
+              524.52
+            ],
+            [
+              374.96,
+              503.24
+            ],
+            [
+              390.64,
+              508.84
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.586,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.055,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 1
+        },
+        {
+          "id": "rear-right-fold",
+          "kind": "ink",
+          "points": [
+            [
+              499.28,
+              514.44
+            ],
+            [
+              534.0,
+              522.28
+            ],
+            [
+              586.64,
+              516.68
+            ],
+            [
+              630.32,
+              526.76
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.159,
+          "opacity": 0.7,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.055,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "right-corner",
+          "kind": "ink",
+          "points": [
+            [
+              633.68,
+              530.12
+            ],
+            [
+              649.36,
+              541.32
+            ],
+            [
+              640.4,
+              559.24
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.037,
+          "opacity": 0.65,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.01,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        }
+      ]
+    },
+    {
+      "id": "cat-head",
+      "name": "偏头睡着的小猫",
+      "marks": [
+        {
+          "id": "near-ear",
+          "kind": "ink",
+          "points": [
+            [
+              389.754,
+              487.875
+            ],
+            [
+              388.241,
+              466.384
+            ],
+            [
+              378.08,
+              427.35
+            ],
+            [
+              415.774,
+              446.234
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.83,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.035,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 1
+        },
+        {
+          "id": "forehead",
+          "kind": "ink",
+          "points": [
+            [
+              419.048,
+              445.478
+            ],
+            [
+              433.57,
+              438.678
+            ],
+            [
+              453.969,
+              437.416
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.464,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.015,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "far-ear",
+          "kind": "ink",
+          "points": [
+            [
+              460.769,
+              436.996
+            ],
+            [
+              484.439,
+              405.093
+            ],
+            [
+              490.235,
+              445.137
+            ],
+            [
+              498.968,
+              458.064
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.891,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.025,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "left-face",
+          "kind": "ink",
+          "points": [
+            [
+              391.182,
+              499.04
+            ],
+            [
+              390.428,
+              510.708
+            ],
+            [
+              401.678,
+              519.607
+            ],
+            [
+              400.168,
+              528.001
+            ],
+            [
+              414.271,
+              529.343
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.891,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.035,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 1
+        },
+        {
+          "id": "cheek",
+          "kind": "ink",
+          "points": [
+            [
+              498.717,
+              471.915
+            ],
+            [
+              508.204,
+              488.116
+            ],
+            [
+              500.567,
+              504.821
+            ],
+            [
+              497.713,
+              512.377
+            ],
+            [
+              483.946,
+              522.452
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.647,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.045,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "chin",
+          "kind": "ink",
+          "points": [
+            [
+              421.574,
+              531.104
+            ],
+            [
+              437.021,
+              533.286
+            ],
+            [
+              452.047,
+              528.667
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 2.013,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.015,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "near-ear-inner",
+          "kind": "ink",
+          "points": [
+            [
+              390.338,
+              440.613
+            ],
+            [
+              401.168,
+              457.653
+            ],
+            [
+              406.709,
+              451.776
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.915,
+          "opacity": 0.52,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.075,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "far-ear-inner",
+          "kind": "ink",
+          "points": [
+            [
+              478.314,
+              428.348
+            ],
+            [
+              479.658,
+              444.13
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.854,
+          "opacity": 0.47,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.055,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "near-eye",
+          "kind": "ink",
+          "points": [
+            [
+              409.399,
+              498.283
+            ],
+            [
+              416.954,
+              501.137
+            ],
+            [
+              424.594,
+              499.373
+            ],
+            [
+              430.385,
+              494.587
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 2.05,
+          "opacity": 0.98,
+          "pressure": 0.45,
+          "wobble": 0.35,
+          "gaps": 0,
+          "smooth": true,
+          "nib": true,
+          "jitter": 0.08
+        },
+        {
+          "id": "far-eye",
+          "kind": "ink",
+          "points": [
+            [
+              453.134,
+              483.587
+            ],
+            [
+              459.346,
+              485.602
+            ],
+            [
+              466.482,
+              481.655
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.7,
+          "opacity": 0.98,
+          "pressure": 0.45,
+          "wobble": 0.35,
+          "gaps": 0,
+          "smooth": true,
+          "nib": true,
+          "jitter": 0.08
+        },
+        {
+          "id": "nose",
+          "kind": "ink",
+          "points": [
+            [
+              427.617,
+              512.468
+            ],
+            [
+              435.256,
+              510.705
+            ],
+            [
+              430.808,
+              516.329
+            ],
+            [
+              427.617,
+              512.468
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.65,
+          "opacity": 0.98,
+          "pressure": 0.45,
+          "wobble": 0.35,
+          "gaps": 0,
+          "smooth": true,
+          "nib": true,
+          "jitter": 0.08
+        },
+        {
+          "id": "muzzle-left",
+          "kind": "ink",
+          "points": [
+            [
+              430.808,
+              516.329
+            ],
+            [
+              428.793,
+              522.542
+            ],
+            [
+              420.902,
+              523.214
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.85,
+          "opacity": 0.98,
+          "pressure": 0.45,
+          "wobble": 0.35,
+          "gaps": 0,
+          "smooth": true,
+          "nib": true,
+          "jitter": 0.08
+        },
+        {
+          "id": "muzzle-right",
+          "kind": "ink",
+          "points": [
+            [
+              430.808,
+              516.329
+            ],
+            [
+              435.34,
+              521.03
+            ],
+            [
+              440.545,
+              518.679
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.85,
+          "opacity": 0.98,
+          "pressure": 0.45,
+          "wobble": 0.35,
+          "gaps": 0,
+          "smooth": true,
+          "nib": true,
+          "jitter": 0.08
+        },
+        {
+          "id": "whisker-left-1",
+          "kind": "ink",
+          "points": [
+            [
+              408.477,
+              519.185
+            ],
+            [
+              386.483,
+              518.516
+            ],
+            [
+              371.205,
+              522.044
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.732,
+          "opacity": 0.65,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.07,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "whisker-left-2",
+          "kind": "ink",
+          "points": [
+            [
+              409.485,
+              523.551
+            ],
+            [
+              391.941,
+              532.199
+            ],
+            [
+              379.853,
+              539.587
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.732,
+          "opacity": 0.65,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.07,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "whisker-right-1",
+          "kind": "ink",
+          "points": [
+            [
+              452.465,
+              505.582
+            ],
+            [
+              473.283,
+              496.178
+            ],
+            [
+              488.56,
+              492.65
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.732,
+          "opacity": 0.65,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.07,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "whisker-right-2",
+          "kind": "ink",
+          "points": [
+            [
+              453.724,
+              511.039
+            ],
+            [
+              476.559,
+              510.364
+            ],
+            [
+              488.983,
+              514.393
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.732,
+          "opacity": 0.65,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.07,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "tabby-0",
+          "kind": "ink",
+          "points": [
+            [
+              421.903,
+              452.866
+            ],
+            [
+              430.131,
+              463.61
+            ],
+            [
+              432.734,
+              469.907
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 1.525,
+          "opacity": 0.49,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.09,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "tabby-1",
+          "kind": "ink",
+          "points": [
+            [
+              435.334,
+              446.317
+            ],
+            [
+              442.218,
+              456.221
+            ],
+            [
+              444.569,
+              461.426
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 1.525,
+          "opacity": 0.49,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.09,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "tabby-2",
+          "kind": "ink",
+          "points": [
+            [
+              398.403,
+              505.42
+            ],
+            [
+              410.323,
+              507.265
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 1.525,
+          "opacity": 0.49,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.09,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "tabby-3",
+          "kind": "ink",
+          "points": [
+            [
+              493.765,
+              490.3
+            ],
+            [
+              484.7,
+              495.841
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 1.525,
+          "opacity": 0.49,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.09,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        }
+      ]
+    },
+    {
+      "id": "cat-paw",
+      "name": "搭过袋口的前爪",
+      "marks": [
+        {
+          "id": "shoulder",
+          "kind": "ink",
+          "points": [
+            [
+              485.84,
+              527.88
+            ],
+            [
+              507.12,
+              529.0
+            ],
+            [
+              522.8,
+              542.44
+            ],
+            [
+              528.4,
+              558.12
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.708,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.035,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "paw-outside",
+          "kind": "ink",
+          "points": [
+            [
+              528.4,
+              558.12
+            ],
+            [
+              532.88,
+              580.52
+            ],
+            [
+              530.64,
+              600.68
+            ],
+            [
+              522.8,
+              614.12
+            ],
+            [
+              512.72,
+              616.36
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.769,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.025,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 1
+        },
+        {
+          "id": "paw-inside",
+          "kind": "ink",
+          "points": [
+            [
+              501.52,
+              554.76
+            ],
+            [
+              502.64,
+              571.56
+            ],
+            [
+              507.12,
+              587.24
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.22,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.075,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "paw-tip",
+          "kind": "ink",
+          "points": [
+            [
+              506.0,
+              599.56
+            ],
+            [
+              507.12,
+              609.64
+            ],
+            [
+              512.72,
+              615.24
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.4029999999999998,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.025,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "toe-a",
+          "kind": "ink",
+          "points": [
+            [
+              516.08,
+              607.4
+            ],
+            [
+              516.08,
+              616.36
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.854,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "toe-b",
+          "kind": "ink",
+          "points": [
+            [
+              522.8,
+              605.16
+            ],
+            [
+              522.8,
+              613.0
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.793,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "paw-stripe",
+          "kind": "ink",
+          "points": [
+            [
+              512.72,
+              557.0
+            ],
+            [
+              521.68,
+              560.36
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 1.769,
+          "opacity": 0.44,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.035,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        }
+      ]
+    },
+    {
+      "id": "bag-front",
+      "name": "有宽折痕的软纸袋",
+      "marks": [
+        {
+          "id": "front-left-lip",
+          "kind": "ink",
+          "points": [
+            [
+              354.8,
+              548.04
+            ],
+            [
+              380.56,
+              563.72
+            ],
+            [
+              406.32,
+              545.8
+            ],
+            [
+              437.68,
+              565.96
+            ],
+            [
+              476.88,
+              554.76
+            ],
+            [
+              494.8,
+              557.0
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.464,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.045,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "front-right-lip",
+          "kind": "ink",
+          "points": [
+            [
+              542.96,
+              563.72
+            ],
+            [
+              570.96,
+              573.8
+            ],
+            [
+              609.04,
+              563.72
+            ],
+            [
+              646.0,
+              548.04
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.4029999999999998,
+          "opacity": 0.91,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.045,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "left-upper-side",
+          "kind": "ink",
+          "points": [
+            [
+              353.68,
+              555.88
+            ],
+            [
+              367.12,
+              600.68
+            ],
+            [
+              380.56,
+              651.08
+            ],
+            [
+              389.52,
+              683.56
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.464,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.08,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "left-lower-side",
+          "kind": "ink",
+          "points": [
+            [
+              395.12,
+              717.16
+            ],
+            [
+              402.96,
+              748.52
+            ],
+            [
+              411.92,
+              778.76
+            ],
+            [
+              430.96,
+              787.72
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.342,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.065,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 1
+        },
+        {
+          "id": "right-side",
+          "kind": "ink",
+          "points": [
+            [
+              646.0,
+              561.48
+            ],
+            [
+              639.28,
+              613.0
+            ],
+            [
+              640.4,
+              656.68
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.037,
+          "opacity": 0.63,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.11,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "right-lower-side",
+          "kind": "ink",
+          "points": [
+            [
+              630.32,
+              714.92
+            ],
+            [
+              629.2,
+              750.76
+            ],
+            [
+              607.92,
+              789.96
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.4029999999999998,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.055,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "bottom",
+          "kind": "ink",
+          "points": [
+            [
+              435.44,
+              792.2
+            ],
+            [
+              475.76,
+              796.68
+            ],
+            [
+              530.64,
+              796.68
+            ],
+            [
+              570.96,
+              800.04
+            ],
+            [
+              604.56,
+              792.2
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.342,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.06,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-left",
+          "kind": "ink",
+          "points": [
+            [
+              378.32,
+              582.76
+            ],
+            [
+              419.76,
+              629.8
+            ],
+            [
+              409.68,
+              675.72
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.915,
+          "opacity": 0.55,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.1,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-middle",
+          "kind": "ink",
+          "points": [
+            [
+              422.0,
+              697.0
+            ],
+            [
+              442.16,
+              727.24
+            ],
+            [
+              434.32,
+              746.28
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.915,
+          "opacity": 0.55,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.1,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-bottom",
+          "kind": "ink",
+          "points": [
+            [
+              415.28,
+              779.88
+            ],
+            [
+              448.88,
+              754.12
+            ],
+            [
+              467.92,
+              763.08
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.915,
+          "opacity": 0.55,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.1,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-right",
+          "kind": "ink",
+          "points": [
+            [
+              623.6,
+              606.28
+            ],
+            [
+              596.72,
+              655.56
+            ],
+            [
+              604.56,
+              682.44
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.915,
+          "opacity": 0.55,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.1,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-pressure",
+          "kind": "ink",
+          "points": [
+            [
+              386.16,
+              577.16
+            ],
+            [
+              405.2,
+              604.04
+            ],
+            [
+              411.92,
+              623.08
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.976,
+          "opacity": 0.59,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.06,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-hatch-0",
+          "kind": "ink",
+          "points": [
+            [
+              408.56,
+              751.88
+            ],
+            [
+              422.0,
+              772.04
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.671,
+          "opacity": 0.37,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.12,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-hatch-1",
+          "kind": "ink",
+          "points": [
+            [
+              411.92,
+              754.12
+            ],
+            [
+              426.48,
+              773.72
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.671,
+          "opacity": 0.37,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.12,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-hatch-2",
+          "kind": "ink",
+          "points": [
+            [
+              415.28,
+              756.36
+            ],
+            [
+              430.96,
+              775.4
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.671,
+          "opacity": 0.37,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.12,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-hatch-3",
+          "kind": "ink",
+          "points": [
+            [
+              418.64,
+              758.6
+            ],
+            [
+              435.44,
+              777.08
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.671,
+          "opacity": 0.37,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.12,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-hatch-4",
+          "kind": "ink",
+          "points": [
+            [
+              422.0,
+              760.84
+            ],
+            [
+              439.92,
+              778.76
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.671,
+          "opacity": 0.37,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.12,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "fold-hatch-5",
+          "kind": "ink",
+          "points": [
+            [
+              425.36,
+              763.08
+            ],
+            [
+              444.4,
+              780.44
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.671,
+          "opacity": 0.37,
+          "smooth": false,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.12,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        }
+      ]
+    },
+    {
+      "id": "tea-cup",
+      "name": "旁边的一小杯茶",
+      "marks": [
+        {
+          "id": "rim-front",
+          "kind": "ink",
+          "points": [
+            [
+              189.04,
+              700.36
+            ],
+            [
+              201.36,
+              713.8
+            ],
+            [
+              236.08,
+              716.04
+            ],
+            [
+              267.44,
+              708.2
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.281,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.05,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "rim-back",
+          "kind": "ink",
+          "points": [
+            [
+              190.16,
+              698.12
+            ],
+            [
+              215.92,
+              692.52
+            ],
+            [
+              242.8,
+              693.64
+            ],
+            [
+              266.32,
+              701.48
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.915,
+          "opacity": 0.75,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.07,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "left-wall",
+          "kind": "ink",
+          "points": [
+            [
+              187.92,
+              709.32
+            ],
+            [
+              192.4,
+              748.52
+            ],
+            [
+              199.12,
+              772.04
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.22,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.07,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "bottom",
+          "kind": "ink",
+          "points": [
+            [
+              201.36,
+              777.64
+            ],
+            [
+              224.88,
+              783.24
+            ],
+            [
+              249.52,
+              779.88
+            ],
+            [
+              261.84,
+              773.16
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.22,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.045,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "right-wall",
+          "kind": "ink",
+          "points": [
+            [
+              271.92,
+              716.04
+            ],
+            [
+              269.68,
+              745.16
+            ],
+            [
+              266.32,
+              761.96
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.976,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.08,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "handle",
+          "kind": "ink",
+          "points": [
+            [
+              270.8,
+              717.16
+            ],
+            [
+              293.2,
+              720.52
+            ],
+            [
+              295.44,
+              742.92
+            ],
+            [
+              280.88,
+              757.48
+            ],
+            [
+              269.68,
+              755.24
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 1.22,
+          "opacity": 0.91,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.05,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "handle-inner",
+          "kind": "ink",
+          "points": [
+            [
+              275.28,
+              726.12
+            ],
+            [
+              284.24,
+              729.48
+            ],
+            [
+              283.12,
+              742.92
+            ],
+            [
+              273.04,
+              748.52
+            ]
+          ],
+          "color": [
+            58,
+            52,
+            44
+          ],
+          "width": 0.854,
+          "opacity": 0.72,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.1,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        },
+        {
+          "id": "steam",
+          "kind": "ink",
+          "points": [
+            [
+              224.88,
+              672.36
+            ],
+            [
+              233.84,
+              661.16
+            ],
+            [
+              227.12,
+              646.6
+            ]
+          ],
+          "color": [
+            108,
+            98,
+            83
+          ],
+          "width": 0.671,
+          "opacity": 0.29,
+          "smooth": true,
+          "wobble": 1.05,
+          "pressure": 0.5,
+          "gaps": 0.16,
+          "gap_length": [
+            2,
+            5
+          ],
+          "step": 1.6,
+          "nib": true,
+          "jitter": 0.18,
+          "overdraw": 0
+        }
+      ]
+    }
+  ],
+  "engine": "pencil-case"
+}

@@ -28,6 +28,9 @@ MARK_FIELDS = {"ink": STROKE_FIELDS, "pencil": STROKE_FIELDS,
                "wax": {"polygon", "grain", "direction", "density"},
                "wash": {"polygon", "grain", "edge", "bleed"},
                "hatch": {"polygon", "width", "spacing", "angle"}}
+UPSTREAM_FIELDS = {"ink": {"overdraw", "jitter", "nib", "overshoot", "gap_length", "step"},
+                   "wash": {"offset", "layers"}}
+ENGINES = {"natural-media", "pencil-case"}
 
 
 def number(value, label, lo, hi):
@@ -53,6 +56,9 @@ def stable_id(value, label):
 def validate(scene):
     if not isinstance(scene, dict) or scene.get("version") != 1:
         raise ValueError("scene.version must be 1")
+    engine = scene.get("engine", "natural-media")
+    if not isinstance(engine, str) or engine not in ENGINES:
+        raise ValueError("scene.engine must be natural-media or pencil-case")
     number(scene.get("seed", 0), "seed", 0, 2**32 - 1)
     if not isinstance(scene.get("seed", 0), int):
         raise ValueError("seed must be an integer")
@@ -100,7 +106,8 @@ def validate(scene):
             kind = mark.get("kind")
             if not isinstance(kind, str) or kind not in KINDS:
                 raise ValueError(f"unsupported mark kind: {kind}")
-            unknown = set(mark) - COMMON_FIELDS - MARK_FIELDS[kind]
+            extra = UPSTREAM_FIELDS.get(kind, set()) if engine == "pencil-case" else set()
+            unknown = set(mark) - COMMON_FIELDS - MARK_FIELDS[kind] - extra
             if unknown:
                 raise ValueError(f"unsupported mark fields: {', '.join(sorted(unknown))}")
             stable_id(mark.get("id"), "mark.id")
@@ -124,6 +131,33 @@ def validate(scene):
             for key in ("smooth", "closed"):
                 if key in mark and not isinstance(mark[key], bool):
                     raise ValueError(f"{mark['id']}.{key} must be true or false")
+            if engine == "pencil-case":
+                for key, lo, hi in (("overdraw", 0, 3), ("layers", 1, 3)):
+                    if key in mark:
+                        number(mark[key], f"{mark['id']}.{key}", lo, hi)
+                        if not isinstance(mark[key], int):
+                            raise ValueError(f"{mark['id']}.{key} must be an integer")
+                for key, lo, hi in (("jitter", 0, 3), ("overshoot", 0, 8), ("step", .5, 5)):
+                    if key in mark:
+                        number(mark[key], f"{mark['id']}.{key}", lo, hi)
+                if "nib" in mark and not isinstance(mark["nib"], bool):
+                    raise ValueError(f"{mark['id']}.nib must be true or false")
+                if "gap_length" in mark:
+                    value = mark["gap_length"]
+                    if not isinstance(value, list) or len(value) != 2:
+                        raise ValueError("gap_length must be [minimum, maximum]")
+                    for v in value:
+                        number(v, "gap_length", 0, 64)
+                        if not isinstance(v, int):
+                            raise ValueError("gap_length entries must be integers")
+                    if value[0] > value[1]:
+                        raise ValueError("gap_length minimum must not exceed maximum")
+                if "offset" in mark:
+                    value = mark["offset"]
+                    if not isinstance(value, list) or len(value) != 2:
+                        raise ValueError("offset must be [dx,dy]")
+                    for v in value:
+                        number(v, "offset", -8192, 8192)
     if count > 5000:
         raise ValueError("at most 5000 marks per scene")
     return scene
@@ -137,6 +171,10 @@ def mark_seed(seed, object_id, mark_id):
 def draw_scene(scene):
     """Return composite, paper, (object metadata, RGBA layer) pairs. No writes."""
     validate(scene)
+    brush = media
+    if scene.get("engine") == "pencil-case":
+        import pencil_case_media
+        brush = pencil_case_media
     c = scene["canvas"]
     seed = scene.get("seed", 0)
     paper, tooth = media.paper(c["width"], c["height"], tuple(c.get("paper", [247, 245, 238])), seed, c.get("grain", .3))
@@ -155,7 +193,7 @@ def draw_scene(scene):
                     s = mark_seed(seed, obj["id"], m["id"])
                     random.seed(s)
                     np.random.seed(s)
-                    layer = media.render_mark(layer, m, tooth=tooth)
+                    layer = brush.render_mark(layer, m, tooth=tooth)
             image = Image.alpha_composite(image, layer)
             layers.append((obj, layer))
     finally:
@@ -203,12 +241,19 @@ def render_to(scene, out, overwrite=False):
                         "visible": obj.get("visible", True), "bounds": box,
                         "file": f"layers/{obj['id']}.png", "sha256": sha(path)})
     (out / "scene.json").write_text(json.dumps(scene, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    code_files = [Path(__file__), Path(media.__file__)]
+    if scene.get("engine") == "pencil-case":
+        import pencil_case_media
+        kinds = {m["kind"] for obj in scene["objects"] if obj.get("visible", True)
+                 for m in obj["marks"] if m.get("opacity", 1) > 0}
+        code_files.extend(pencil_case_media.source_files(kinds))
     manifest = {"renderer": "personal-sketchbook/1", "title": scene.get("title", ""),
+                "engine": scene.get("engine", "natural-media"),
                 "seed": scene.get("seed", 0), "size": image.size, "layers": records,
                 "paper": "layers/_paper.png", "artwork": "artwork.png", "source": "scene.json",
                 "artwork_sha256": sha(out / "artwork.png"), "warnings": warnings,
                 "runtime": {"python": platform.python_version(), "pillow": pillow_version, "numpy": np.__version__},
-                "code_sha256": {p.name: sha(p) for p in (Path(__file__), Path(media.__file__))},
+                "code_sha256": {p.relative_to(Path(__file__).parent).as_posix(): sha(p) for p in code_files},
                 "upstream": {"url": "https://github.com/Qizhan7/pencil-case", "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d", "license": "PolyForm Noncommercial 1.0.0"}}
     (out / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return manifest

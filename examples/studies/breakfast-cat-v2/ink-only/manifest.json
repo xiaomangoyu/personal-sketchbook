@@ -1,0 +1,111 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "纸袋里的午睡 · 笔触修订",
+  "engine": "pencil-case",
+  "seed": 2213,
+  "size": [
+    900,
+    1100
+  ],
+  "layers": [
+    {
+      "id": "ground",
+      "name": "少量着地线",
+      "visible": true,
+      "bounds": [
+        140,
+        793,
+        728,
+        810
+      ],
+      "file": "layers/ground.png",
+      "sha256": "9cbc35d42ab3f4967197c3ee7a72fb3ffb622a222020903aaf7b6a1568a920c7"
+    },
+    {
+      "id": "bag-opening",
+      "name": "纸袋口与空隙",
+      "visible": true,
+      "bounds": [
+        351,
+        504,
+        649,
+        559
+      ],
+      "file": "layers/bag-opening.png",
+      "sha256": "08694b282a13ac2a7751396fb95d0fa5438def3651befbc24c3193bb6a9c0329"
+    },
+    {
+      "id": "cat-head",
+      "name": "偏头睡着的小猫",
+      "visible": true,
+      "bounds": [
+        376,
+        404,
+        510,
+        540
+      ],
+      "file": "layers/cat-head.png",
+      "sha256": "dcfe7c1ae6b24ad0dd795cb7b9641f3f3f2a35fab055f149993e1cc31593e309"
+    },
+    {
+      "id": "cat-paw",
+      "name": "搭过袋口的前爪",
+      "visible": true,
+      "bounds": [
+        486,
+        526,
+        535,
+        620
+      ],
+      "file": "layers/cat-paw.png",
+      "sha256": "da7a050b9d4e9b497465e0fed8eb537fbb154867fb7daf1df36f2bb101dcb2d8"
+    },
+    {
+      "id": "bag-front",
+      "name": "有宽折痕的软纸袋",
+      "visible": true,
+      "bounds": [
+        353,
+        546,
+        649,
+        802
+      ],
+      "file": "layers/bag-front.png",
+      "sha256": "ca4e15f0353c2a98c3009294f796ce9270acda96da2d672f40117d5a41c0570f"
+    },
+    {
+      "id": "tea-cup",
+      "name": "旁边的一小杯茶",
+      "visible": true,
+      "bounds": [
+        189,
+        649,
+        298,
+        784
+      ],
+      "file": "layers/tea-cup.png",
+      "sha256": "e000593de37300bbcb9db02fff714f9cb6c4de5e25436b19c8e5079e423a1465"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "48f3d9cca3427fcaccc46158f7dece79b8d9b532f0fe52d19a2771228a7f4a64",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "61dff90441b445e0fb85ee20427158eb05a14ea1d0ba923e7360225f674af1bd",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e",
+    "pencil_case_media.py": "b63bd18676f66eeb6719f08771a69bb20f8c9cbfa592b7de8d1600520b9a4830",
+    "vendor/penwash_lib.py": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

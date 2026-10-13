@@ -23,22 +23,26 @@ description: 用可编辑的 Python 程序化笔触创作或修改有个人手�
 python3 "<skill>/scripts/render.py" "<作品目录>/scene.json" --out "<作品目录>/v01"
 ```
 
-依赖 Python 3、Pillow、NumPy。先检查当前 Python 能否导入；缺依赖时优先使用现有可用环境，确需安装则放隔离环境，避免改动其他项目依赖。
+依赖 Python、Pillow、NumPy；仓库锁定依赖要求 Python 3.11 或以上。先检查当前 Python 能否导入；缺依赖时优先使用现有可用环境，确需安装则放隔离环境，避免改动其他项目依赖。
 
-- 新画面参考 `assets/examples/quiet-desk.json` 的线与淡彩或 `assets/examples/window-plant.json` 的蜡笔用法。同目录 `*-preview.png` 是实际渲染结果，可打开检查笔触；根据当前主题重新安排形状和构图，不把样例的清淡配色当作固定风格。
+- 对照 pencil-case 的钢笔速写、淡彩或蜡笔质感时，使用场景顶层 `engine: "pencil-case"`，直接调用保留的原笔刷。新增的自然媒介引擎与它笔触不同，不能只因同叫 `wash` / `wax` 就替换。默认引擎保持旧作品兼容；五种笔触的实际实现见 [绘图接口](references/render-api.md#pencil-case-上游笔刷)。
+- 钢笔淡彩的新方向样张见 [纸袋猫试稿](examples/studies/breakfast-cat-v2/artwork.png) 和 [生成脚本](examples/generators/breakfast_cat_study.py)。脚本的 `--ink-only` 可先检查姿态、受力和轮廓取舍；去掉颜色后仍应读到动作，再铺局部色。它是一次方向试稿，不代表用户已经认可的通用风格。
+- `assets/examples/quiet-desk.json` 和 `assets/examples/window-plant.json` 保留为数据格式入门；不能据此要求新画都采用完整底色或居中的静物构图。
 - 想看完整故事、街景、动物或风景时，先看 [README 场景画廊](README.md)；六幅画的图片、JSON 和生成脚本一一对应。只读当前题材相关的脚本，不要同时加载所有大场景。鲜活手帐是这组展示的方向，不覆盖用户另选的气质。
 - 每个物件有固定 `id`，每道笔触也有固定 `id`。画布、纸纹、seed、未改对象及 id 保持稳定时，局部编辑不会重抽其他物件的随机笔触。移动用 `translate`，隐藏用 `visible`。
 - `ink / pencil / wax / wash / hatch` 可以在同一物件混用。允许几条辅助找形线；主轮廓、暗部和轻线不要共用一套参数。
 - 保存源 JSON 和输出目录。渲染器输出 `artwork.png`、透明对象图层、纸层和带版本/哈希的 `manifest.json`。这些文件支持再次渲染和分层合成；PNG 本身不包含可编辑路径。
 - 普通修改新建 `v02`，保留上一版。`--overwrite` 只用于用户接受覆盖或临时调试副本；它会替换该输出目录的生成物。
 - 复杂曲线或题材可以写 Python 生成控制点/JSON，保留生成脚本。引擎没有照片自动识别、语义场景生成或人物解剖模型；不要把几何拼图的缺陷归因于纹理不够。
-- 新脚本可复用 `scripts/scene_tools.py` 的 `Scene`、`curve`、`bezier`、`ellipse`、`transform` 与 `clone_object`；参考 [辅助构图接口](references/render-api.md#构图辅助函数)。先确定形体和遮挡，再铺材质。背后元素透过不透明前景时，给前景加低纹理实底，不能只叠更重轮廓。
+- 新脚本可复用 `scripts/scene_tools.py` 的 `Scene`、`curve`、`bezier`、`ellipse`、`transform` 与 `clone_object`；参考 [辅助构图接口](references/render-api.md#构图辅助函数)。先确定形体和遮挡，再铺材质。背后线穿过前景时，优先截掉不可见的线段或调整绘制范围；需要不透明厚涂才补实底。轻墨、留纸的参考不应整件加底色来修遮挡。
 
 ## 看图后再交付
 
 打开实际输出图，先看整体，再看局部。至少检查：主体是否可读、透视/连接是否成立、焦点是否明确、笔触是否跟着形体、浅色是否丢失、暗部是否堵死、边缘是否意外裁切。程序跑通只证明文件生成成功。
 
 发现问题时先改原因：结构错改控制点，主次弱改大小/位置/明度，毛躁先减辅助线或抖动，再考虑加笔。比较版本时固定 seed；只有需要新的一套笔迹时再换它。不给“AI 感”打伪客观分数。
+
+用户指出审美方向不对时，先修一张能说明差别的样张，展示与旧稿的区别，再推广到整组。功能测试只证明稳定性与可编辑性；看图结论要指出可见变化，不能由测试通过推导“已达到参考审美”。
 
 交付时显示图片，并链接源 JSON/生成脚本。简短说明本次怎么处理构图与用笔；未经用户选择，不称为已被接受的个人风格。一次给足可比较的结果即可，不默认批量生成大量候选。
 

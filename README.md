@@ -1,5 +1,20 @@
 # 随手画 · Personal Sketchbook
 
+> **绘画方向修订 · 试稿**
+>
+> 新稿先校准纸袋猫：偏头闭眼、一只爪搭在袋口，保留纸白和断续轮廓。它通过可编辑 JSON 直接调用 pencil-case 原笔刷；这是给用户判断方向的样张，还未替换下面六幅旧作。
+
+<a href="examples/studies/breakfast-cat-v2/artwork.png"><img src="examples/studies/breakfast-cat-v2/artwork.png" alt="纸袋猫第二版方向试稿：轻墨、局部淡彩与留白" width="460"></a>
+
+[旧稿对照](examples/gallery/breakfast-cat/artwork.png) · [只看线稿](examples/studies/breakfast-cat-v2/ink-only/artwork.png) · [场景 JSON](examples/studies/breakfast-cat-v2/scene.json) · [生成脚本](examples/generators/breakfast_cat_study.py)
+
+```bash
+.venv/bin/python examples/generators/breakfast_cat_study.py --out output/cat-study
+.venv/bin/python examples/generators/breakfast_cat_study.py --ink-only --out output/cat-lines
+```
+
+以下画廊保留上一版作品，便于比较和继续修改。
+
 **把一句想法，画成一页有故事的手帐。**
 
 AI 帮你构思画面、写绘图代码；Python 负责线条、色块和纸纹。画完以后，留下的不只有一张图片，还有能继续修改的场景和图层。

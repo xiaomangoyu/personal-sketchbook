@@ -16,17 +16,20 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def check(render=False):
     failures=[]
-    counts={'scenes':0,'edits':0,'links':0,'replayed':0}
+    counts={'scenes':0,'edits':0,'studies':0,'links':0,'replayed':0}
     rows=json.loads((ROOT/'examples/catalog.json').read_text())['scenes']
     targets=[(r['id'],ROOT/'examples/gallery'/r['id']) for r in rows]
     targets.append(('blue-umbrella',ROOT/'examples/edits/blue-umbrella'))
+    targets.extend((str(p.parent.relative_to(ROOT)),p.parent)
+                   for p in sorted((ROOT/'examples/studies').rglob('scene.json')))
     for name,base in targets:
         scene=validate(json.loads((base/'scene.json').read_text()))
         manifest=json.loads((base/'manifest.json').read_text())
         if hashlib.sha256((base/'artwork.png').read_bytes()).hexdigest()!=manifest['artwork_sha256']:
             failures.append(name+': artwork hash differs from manifest')
         if manifest['warnings']: failures.append(name+': '+str(manifest['warnings']))
-        counts['edits' if name=='blue-umbrella' else 'scenes']+=1
+        category='studies' if base.is_relative_to(ROOT/'examples/studies') else ('edits' if name=='blue-umbrella' else 'scenes')
+        counts[category]+=1
         if render:
             image,paper,layers=draw_scene(scene)
             expected=Image.open(base/'artwork.png').convert('RGBA')
@@ -45,7 +48,7 @@ def check(render=False):
     for row in rows:
         if not (ROOT/row['generator']).is_file(): failures.append(row['id']+': missing generator')
         if not (ROOT/'docs/images'/f"{row['id']}-thumb.jpg").is_file(): failures.append(row['id']+': missing thumbnail')
-    for path in [ROOT/'README.md',ROOT/'SKILL.md',ROOT/'references/render-api.md']:
+    for path in [ROOT/'README.md',ROOT/'SKILL.md',ROOT/'references/render-api.md',ROOT/'references/art-direction.md']:
         text=path.read_text()
         links=re.findall(r'(?:src|href)=["\']([^"\']+)["\']',text)+re.findall(r'\]\(([^)]+)\)',text)
         for value in links:
@@ -84,7 +87,7 @@ def check(render=False):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--render',action='store_true',help='replay six scenes plus the edit; recompose and verify layer hashes')
+    p.add_argument('--render',action='store_true',help='replay gallery, edit and studies; recompose and verify layer hashes')
     args=p.parse_args()
     try: print(json.dumps(check(args.render),ensure_ascii=False))
     except (ValueError,OSError,KeyError) as e: p.exit(1,str(e)+'\n')

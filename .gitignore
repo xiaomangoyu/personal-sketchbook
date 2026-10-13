@@ -9,3 +9,4 @@ build/
 .review/
 examples/gallery/*/layers/
 examples/edits/*/layers/
+examples/studies/**/layers/
