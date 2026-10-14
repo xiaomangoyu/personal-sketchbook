@@ -28,8 +28,8 @@ MARK_FIELDS = {"ink": STROKE_FIELDS, "pencil": STROKE_FIELDS,
                "wax": {"polygon", "grain", "direction", "density"},
                "wash": {"polygon", "grain", "edge", "bleed"},
                "hatch": {"polygon", "width", "spacing", "angle"}}
-UPSTREAM_FIELDS = {"ink": {"overdraw", "jitter", "nib", "overshoot", "gap_length", "step"},
-                   "wash": {"offset", "layers"}}
+UPSTREAM_FIELDS = {"ink": {"overdraw", "jitter", "nib", "overshoot", "gap_length", "step", "gradient"},
+                   "wash": {"offset", "layers", "gradient", "spread", "granulation", "clip_polygons"}}
 ENGINES = {"natural-media", "pencil-case"}
 
 
@@ -80,7 +80,8 @@ def validate(scene):
     ranges = {"opacity": (0, 1), "width": (.15, 64), "wobble": (0, 12),
               "pressure": (0, 1), "gaps": (0, .5), "grain": (0, 1),
               "density": (.01, 4), "edge": (0, 1), "bleed": (0, 32),
-              "spacing": (2, 100), "angle": (-360, 360), "direction": (-360, 360)}
+              "spacing": (2, 100), "angle": (-360, 360), "direction": (-360, 360),
+              "spread": (0, 16), "granulation": (0, 1)}
     for obj in objects:
         if not isinstance(obj, dict):
             raise ValueError("each object must be a JSON object")
@@ -132,6 +133,38 @@ def validate(scene):
                 if key in mark and not isinstance(mark[key], bool):
                     raise ValueError(f"{mark['id']}.{key} must be true or false")
             if engine == "pencil-case":
+                if "clip_polygons" in mark:
+                    polygons = mark["clip_polygons"]
+                    if not isinstance(polygons,list) or not 1 <= len(polygons) <= 256:
+                        raise ValueError("clip_polygons requires 1–256 polygons")
+                    total = 0
+                    for polygon in polygons:
+                        if not isinstance(polygon,list) or not 3 <= len(polygon) <= 4096:
+                            raise ValueError("clip_polygons: each polygon requires 3–4096 points")
+                        total += len(polygon)
+                        for point in polygon:
+                            if not isinstance(point,list) or len(point) != 2:
+                                raise ValueError("clip_polygons: each point must be [x,y]")
+                            for v in point:
+                                number(v,"clip coordinate",-8192,8192)
+                    if total > 8192:
+                        raise ValueError("clip_polygons permits at most 8192 total points")
+                if "gradient" in mark:
+                    value = mark["gradient"]
+                    required = {"start", "end", "opacity"}
+                    if not isinstance(value, dict) or not required <= value.keys() or set(value)-required-{"color_to"}:
+                        raise ValueError("gradient requires start, end, opacity; color_to is optional")
+                    for key in ("start", "end", "opacity"):
+                        pair = value[key]
+                        if not isinstance(pair, list) or len(pair) != 2:
+                            raise ValueError(f"gradient.{key} must contain two numbers")
+                        for v in pair:
+                            number(v, f"gradient.{key}", 0 if key == "opacity" else -8192,
+                                   1 if key == "opacity" else 8192)
+                    if math.dist(value["start"], value["end"]) < .001:
+                        raise ValueError("gradient start and end must be at least .001 pixels apart")
+                    if "color_to" in value:
+                        color(value["color_to"], "gradient.color_to")
                 for key, lo, hi in (("overdraw", 0, 3), ("layers", 1, 3)):
                     if key in mark:
                         number(mark[key], f"{mark['id']}.{key}", lo, hi)
@@ -190,6 +223,12 @@ def draw_scene(scene):
                     dx, dy = obj.get("translate", [0, 0])
                     key = "points" if m["kind"] in ("ink", "pencil") else "polygon"
                     m[key] = [[x + dx, y + dy] for x, y in m[key]]
+                    if "clip_polygons" in m:
+                        m["clip_polygons"] = [[[x+dx,y+dy] for x,y in p] for p in m["clip_polygons"]]
+                    if "gradient" in m:
+                        for endpoint in ("start", "end"):
+                            x, y = m["gradient"][endpoint]
+                            m["gradient"][endpoint] = [x+dx, y+dy]
                     s = mark_seed(seed, obj["id"], m["id"])
                     random.seed(s)
                     np.random.seed(s)

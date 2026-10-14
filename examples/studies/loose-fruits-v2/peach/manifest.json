@@ -1,0 +1,137 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "带叶的桃子 · 松散彩色干笔",
+  "engine": "pencil-case",
+  "seed": 84619,
+  "size": [
+    900,
+    900
+  ],
+  "layers": [
+    {
+      "id": "contact-shadow",
+      "name": "contact-shadow",
+      "visible": true,
+      "bounds": [
+        264,
+        605,
+        625,
+        696
+      ],
+      "file": "layers/contact-shadow.png",
+      "sha256": "83d52f97cae446ec183af08311459bf4d06743be827b1c018cdd8778714dfe4b"
+    },
+    {
+      "id": "peach-leaf-left",
+      "name": "peach-leaf-left",
+      "visible": true,
+      "bounds": [
+        301,
+        226,
+        425,
+        276
+      ],
+      "file": "layers/peach-leaf-left.png",
+      "sha256": "9e895503ae894f6a09e871df0921e3cea90c2aaeaa2500f4fe515a2d8156884a"
+    },
+    {
+      "id": "peach-leaf-left-vein",
+      "name": "peach-leaf-left-vein",
+      "visible": true,
+      "bounds": [
+        301,
+        242,
+        433,
+        272
+      ],
+      "file": "layers/peach-leaf-left-vein.png",
+      "sha256": "fe2b796613f29c597ec3e0fe92d31501a28946e20fdb0372d2d18c84f1f83dc6"
+    },
+    {
+      "id": "peach-leaf-right",
+      "name": "peach-leaf-right",
+      "visible": true,
+      "bounds": [
+        464,
+        184,
+        555,
+        269
+      ],
+      "file": "layers/peach-leaf-right.png",
+      "sha256": "152415898df3f50a284b240ad034d39ee131eb37d764d18a2a9e6d24b2cf7686"
+    },
+    {
+      "id": "peach-leaf-right-vein",
+      "name": "peach-leaf-right-vein",
+      "visible": true,
+      "bounds": [
+        458,
+        180,
+        552,
+        271
+      ],
+      "file": "layers/peach-leaf-right-vein.png",
+      "sha256": "4e2cb4ecd902a47fc641cfc0fd17b337c5e681e7a4a3f66efe0d342f26566818"
+    },
+    {
+      "id": "peach-stem",
+      "name": "peach-stem",
+      "visible": true,
+      "bounds": [
+        440,
+        240,
+        452,
+        293
+      ],
+      "file": "layers/peach-stem.png",
+      "sha256": "c6c1d01273082186ca884052761040e2c8ade64cf104c13ea94e28c217e35c43"
+    },
+    {
+      "id": "peach-skin",
+      "name": "peach-skin",
+      "visible": true,
+      "bounds": [
+        268,
+        281,
+        624,
+        649
+      ],
+      "file": "layers/peach-skin.png",
+      "sha256": "b2ebe4bdd20ea5f6f96e682c4b1e9186f2120c7a145d14d5bf238dcb46f6b174"
+    },
+    {
+      "id": "peach-contour",
+      "name": "peach-contour",
+      "visible": true,
+      "bounds": [
+        268,
+        280,
+        629,
+        662
+      ],
+      "file": "layers/peach-contour.png",
+      "sha256": "04757113fca555ce5ea335dde048d8c7b9b65fba130accd80fae363aed66d648"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "de05f948c96abe2bc091520c45f719ddcb08ee3b33157aa3121c77ee348ac586",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "f929ffa3b4d48868143d0ed35c941e21063571d53ecdcece7c72620b6ba7dea9",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e",
+    "pencil_case_media.py": "ff0d9acbb60e0489da90856facf1601d86add310bdd0315b698fadd13493e6c7",
+    "vendor/penwash_lib.py": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

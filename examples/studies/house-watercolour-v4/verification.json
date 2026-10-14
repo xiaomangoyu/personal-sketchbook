@@ -1,0 +1,18 @@
+{
+  "engine": "pencil-case",
+  "marks_by_kind": {
+    "wash": 43,
+    "hatch": 11,
+    "ink": 1247
+  },
+  "paper_all_pixels_rgba": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "exterior_background_verified_pure_white": true,
+  "layers_recompose_exactly": true,
+  "upstream_penwash_hash_verified": true,
+  "warnings": []
+}

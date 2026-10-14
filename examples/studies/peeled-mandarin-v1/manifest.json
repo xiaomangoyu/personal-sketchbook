@@ -1,0 +1,228 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "剥开的橘子 · 彩色线描与顺形短排线",
+  "engine": "pencil-case",
+  "seed": 84617,
+  "size": [
+    1000,
+    1030
+  ],
+  "layers": [
+    {
+      "id": "ground",
+      "name": "轻淡的接触影",
+      "visible": true,
+      "bounds": [
+        197,
+        564,
+        792,
+        916
+      ],
+      "file": "layers/ground.png",
+      "sha256": "8c92990f9fe2476c4f24599d4bb4bb7e65c98f250c9eb0b19a925424e3b04745"
+    },
+    {
+      "id": "back-peel",
+      "name": "翻开的橘皮与白瓤",
+      "visible": true,
+      "bounds": [
+        304,
+        128,
+        526,
+        357
+      ],
+      "file": "layers/back-peel.png",
+      "sha256": "c49305e723161b2bb175d9831881d62e4ef3ad8307fe6b4e7521d732c2dfb012"
+    },
+    {
+      "id": "left-peel",
+      "name": "翻开的橘皮与白瓤",
+      "visible": true,
+      "bounds": [
+        154,
+        304,
+        334,
+        639
+      ],
+      "file": "layers/left-peel.png",
+      "sha256": "b28815d7ebc2923242a8854d4dd5db5bcb5d4ccd4db3489673a52e0af9ead17e"
+    },
+    {
+      "id": "right-peel",
+      "name": "翻开的橘皮与白瓤",
+      "visible": true,
+      "bounds": [
+        676,
+        393,
+        858,
+        687
+      ],
+      "file": "layers/right-peel.png",
+      "sha256": "4ab28e422ec207f04e1ea27536185500a06e4da3a8382b6d24e2eae4257d0e0d"
+    },
+    {
+      "id": "front-peel",
+      "name": "翻开的橘皮与白瓤",
+      "visible": true,
+      "bounds": [
+        312,
+        663,
+        575,
+        880
+      ],
+      "file": "layers/front-peel.png",
+      "sha256": "fee8da62440b70ac19701d37e1229eefedfefce5f81a4386db9653eeca511fe1"
+    },
+    {
+      "id": "fruit-0",
+      "name": "第 1 瓣果肉",
+      "visible": true,
+      "bounds": [
+        269,
+        355,
+        489,
+        472
+      ],
+      "file": "layers/fruit-0.png",
+      "sha256": "e58e11c1d50c1b041f0f4251de57fd94a1e05f493411aa237a3fbf78ad5ad2f2"
+    },
+    {
+      "id": "fruit-1",
+      "name": "第 2 瓣果肉",
+      "visible": true,
+      "bounds": [
+        315,
+        267,
+        512,
+        406
+      ],
+      "file": "layers/fruit-1.png",
+      "sha256": "32aca97bff1ed930e3858e9bacd6d5f842b9cfd3711ee6a44b0d05249e5050e4"
+    },
+    {
+      "id": "fruit-2",
+      "name": "第 3 瓣果肉",
+      "visible": true,
+      "bounds": [
+        439,
+        246,
+        611,
+        386
+      ],
+      "file": "layers/fruit-2.png",
+      "sha256": "ad350d055fac852514551f6e5e68bdcd78f70fe8ebddb74627f4cf4738b9b524"
+    },
+    {
+      "id": "fruit-3",
+      "name": "第 4 瓣果肉",
+      "visible": true,
+      "bounds": [
+        560,
+        274,
+        737,
+        396
+      ],
+      "file": "layers/fruit-3.png",
+      "sha256": "ac24c4a09d59276bb1e9a65242ebf70c89977b7fb7005657cf1313f0b8fcea13"
+    },
+    {
+      "id": "fruit-4",
+      "name": "第 5 瓣果肉",
+      "visible": true,
+      "bounds": [
+        588,
+        379,
+        778,
+        521
+      ],
+      "file": "layers/fruit-4.png",
+      "sha256": "04d9a944f343dbbd23684f0a0abb91a08109b63d982a638fc43581f6703e74e3"
+    },
+    {
+      "id": "fruit-5",
+      "name": "第 6 瓣果肉",
+      "visible": true,
+      "bounds": [
+        573,
+        431,
+        763,
+        655
+      ],
+      "file": "layers/fruit-5.png",
+      "sha256": "05122ed34fcdfa42bde4ed8f430fc8e0b239254fd63d3a010b98d6077aadbff2"
+    },
+    {
+      "id": "fruit-6",
+      "name": "第 7 瓣果肉",
+      "visible": true,
+      "bounds": [
+        488,
+        437,
+        664,
+        702
+      ],
+      "file": "layers/fruit-6.png",
+      "sha256": "e3f7876e470cf98cd387d26ce342a62b6962b981d7259f5e4e0864f384a07235"
+    },
+    {
+      "id": "fruit-7",
+      "name": "第 8 瓣果肉",
+      "visible": true,
+      "bounds": [
+        345,
+        427,
+        521,
+        698
+      ],
+      "file": "layers/fruit-7.png",
+      "sha256": "c4b3650ec386730b0a8ed27cab594e5a4e4e4e11da7035a1dedbcbcb2d7fc9f1"
+    },
+    {
+      "id": "fruit-8",
+      "name": "第 9 瓣果肉",
+      "visible": true,
+      "bounds": [
+        267,
+        420,
+        499,
+        629
+      ],
+      "file": "layers/fruit-8.png",
+      "sha256": "3f5af94cfc1b208d528b544a1db387f8a5a984cd68692b5102e6c8b6eb121269"
+    },
+    {
+      "id": "crown",
+      "name": "果心的短赭色纤维",
+      "visible": true,
+      "bounds": [
+        534,
+        391,
+        565,
+        424
+      ],
+      "file": "layers/crown.png",
+      "sha256": "0c544c199aa41bcbda5ddb6a2335f97c1863a0e7642a1ab03dc32ae1e985c4c8"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "3ae21f6fbed560fcd36515913543aa631cc857a481e7a06f861c240b32b7389b",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "f929ffa3b4d48868143d0ed35c941e21063571d53ecdcece7c72620b6ba7dea9",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e",
+    "pencil_case_media.py": "ff0d9acbb60e0489da90856facf1601d86add310bdd0315b698fadd13493e6c7",
+    "vendor/penwash_lib.py": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

@@ -1,31 +1,47 @@
 # 随手画 · Personal Sketchbook
 
-> **绘画方向修订 · 试稿**
->
-> 新稿先校准纸袋猫：偏头闭眼、一只爪搭在袋口，保留纸白和断续轮廓。它通过可编辑 JSON 直接调用 pencil-case 原笔刷；这是给用户判断方向的样张，还未替换下面六幅旧作。
+**用几笔颜色，画出具体的形状。**
 
-<a href="examples/studies/breakfast-cat-v2/artwork.png"><img src="examples/studies/breakfast-cat-v2/artwork.png" alt="纸袋猫第二版方向试稿：轻墨、局部淡彩与留白" width="460"></a>
+一个可继续修改的个人绘画 skill。AI 帮忙构思和编写绘图代码，Python 用笔触画出图片；你看图、选方向，再局部调整。支持彩色线描、钢笔淡彩、铅笔与蜡笔。
 
-[旧稿对照](examples/gallery/breakfast-cat/artwork.png) · [只看线稿](examples/studies/breakfast-cat-v2/ink-only/artwork.png) · [场景 JSON](examples/studies/breakfast-cat-v2/scene.json) · [生成脚本](examples/generators/breakfast_cat_study.py)
+> An editable sketchbook for loose coloured lines and small stories. AI helps plan and code; Python renders the marks. Keep the picture, its source, and room to revise.
 
-```bash
-.venv/bin/python examples/generators/breakfast_cat_study.py --out output/cat-study
-.venv/bin/python examples/generators/breakfast_cat_study.py --ink-only --out output/cat-lines
-```
+## 最近画的四种水果
 
-以下画廊保留上一版作品，便于比较和继续修改。
+这组用 pencil-case 原版钢笔笔刷绘制，颜色主要来自松散的有色短笔，背景保持纯白。不同果实有不同的形体和表面，不能只给同一套排线换个颜色。
 
-**把一句想法，画成一页有故事的手帐。**
+<table>
+<tr>
+<td width="50%"><a href="examples/studies/loose-fruits-v2/mandarin/artwork.png"><img src="examples/studies/loose-fruits-v2/mandarin/artwork.png" alt="整颗剥皮的橘子：鼓起的果瓣、弯曲的纵缝，果皮向外翻开。" width="100%"></a><br><strong>整颗剥皮的橘子</strong><p>鼓起的果瓣、弯曲的纵缝，果皮向外翻开。</p><a href="examples/studies/loose-fruits-v2/mandarin/scene.json">场景 JSON</a> · <a href="examples/generators/loose_fruit_studies.py">生成脚本</a></td>
+<td width="50%"><a href="examples/studies/loose-fruits-v2/pear/artwork.png"><img src="examples/studies/loose-fruits-v2/pear/artwork.png" alt="歪一点的梨：细颈偏向一侧，黄绿短笔围着饱满的下腹转。" width="100%"></a><br><strong>歪一点的梨</strong><p>细颈偏向一侧，黄绿短笔围着饱满的下腹转。</p><a href="examples/studies/loose-fruits-v2/pear/scene.json">场景 JSON</a> · <a href="examples/generators/loose_fruit_studies.py">生成脚本</a></td>
+</tr>
+<tr>
+<td width="50%"><a href="examples/studies/loose-fruits-v2/peach/artwork.png"><img src="examples/studies/loose-fruits-v2/peach/artwork.png" alt="带叶的桃子：两侧不等大，杏黄过渡到粉红，果缝弯着向下。" width="100%"></a><br><strong>带叶的桃子</strong><p>两侧不等大，杏黄过渡到粉红，果缝弯着向下。</p><a href="examples/studies/loose-fruits-v2/peach/scene.json">场景 JSON</a> · <a href="examples/generators/loose_fruit_studies.py">生成脚本</a></td>
+<td width="50%"><a href="examples/studies/strawberry-texture-v3/artwork.png"><img src="examples/studies/strawberry-texture-v3/artwork.png" alt="一颗草莓：短碎色笔、淡金色籽与小凹陷，保留纸白。" width="100%"></a><br><strong>一颗草莓</strong><p>短碎色笔、淡金色籽与小凹陷，保留纸白。</p><a href="examples/studies/strawberry-texture-v3/scene.json">场景 JSON</a> · <a href="examples/generators/strawberry_texture_study.py">生成脚本</a></td>
+</tr>
+</table>
 
-AI 帮你构思画面、写绘图代码；Python 负责线条、色块和纸纹。画完以后，留下的不只有一张图片，还有能继续修改的场景和图层。
+### 同一颗草莓，换一种表面
 
-![随手画：纸袋里的猫、周末橘子摊和书页里的鲸鱼](docs/images/cover.jpg)
+左边的长排线偏向纤维感；右边改成短碎笔触，把籽周围的小凹陷留出来。只改果皮与籽两个对象，叶子、轮廓和投影等其余 14 个图层的哈希保持一致。
 
-> An editable sketchbook for small stories. AI plans the scene and writes the code; Python renders the ink, pencil, wax and washes. Keep the artwork, its source, and the freedom to change it.
+<table><tr>
+<td width="50%"><img src="examples/studies/loose-fruits-v2/strawberry/artwork.png" alt="修改前：草莓使用较长的排线" width="100%"><br>修改前 · 长排线</td>
+<td width="50%"><img src="examples/studies/strawberry-texture-v3/artwork.png" alt="修改后：短碎色笔与籽窝" width="100%"><br>修改后 · 短笔与籽窝</td>
+</tr></table>
 
-## 翻开六页小故事
+[彩色线描的画法](references/coloured-linework.md) · [水彩渐变与晕染](references/light-watercolour.md) · [草莓修改脚本](examples/generators/strawberry_texture_study.py)
 
-同一套工具，可以画一场雨、一阵风，也可以让一条鲸鱼从书页间游出来。下面都是实际渲染的完整作品；点图片看大图，点源文件继续改。
+## 之前的小故事
+
+<details>
+<summary>展开早期场景画廊与纸袋猫试稿</summary>
+
+这些版本保留用于比较构图、媒介和用笔，不作为新画必须遵循的固定风格。
+
+<a href="examples/studies/breakfast-cat-v2/artwork.png"><img src="examples/studies/breakfast-cat-v2/artwork.png" alt="轻墨、局部淡彩与留白的纸袋猫" width="460"></a>
+
+[纸袋猫线稿](examples/studies/breakfast-cat-v2/ink-only/artwork.png) · [场景 JSON](examples/studies/breakfast-cat-v2/scene.json) · [生成脚本](examples/generators/breakfast_cat_study.py)
 
 <!-- GALLERY:START -->
 <table>
@@ -43,6 +59,8 @@ AI 帮你构思画面、写绘图代码；Python 负责线条、色块和纸纹�
 </tr>
 </table>
 <!-- GALLERY:END -->
+
+</details>
 
 ## 画完了，还能继续画
 
@@ -64,7 +82,7 @@ AI 帮你构思画面、写绘图代码；Python 负责线条、色块和纸纹�
 
 ## 五支笔，各有用处
 
-下面是从这组作品截取的实际局部。
+下面是从早期六幅场景中截取的实际局部；本页水果主要使用原版 `ink`，只有接触投影带少量淡彩。
 
 ![实际作品中的钢笔、铅笔、蜡笔、淡彩和排线细节](docs/images/brushes.jpg)
 
@@ -89,7 +107,7 @@ git clone https://github.com/xiaomangoyu/personal-sketchbook.git
 cd personal-sketchbook
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python scripts/render.py examples/gallery/breakfast-cat/scene.json --out output/first-drawing
+.venv/bin/python scripts/render.py examples/studies/strawberry-texture-v3/scene.json --out output/first-drawing
 ```
 
 打开 `output/first-drawing/artwork.png` 就能看到结果。这条命令直接重放已有场景，不需要模型或 API key。Windows 下对应的 Python 路径是 `.venv\Scripts\python.exe`；本次未验证 Windows 运行。
@@ -108,10 +126,11 @@ python3 -m venv .venv
 
 ### 用 Python 继续改
 
-每幅画的生成脚本都支持单独输出，例如：
+水果例子可以重新生成，也可以只改草莓纹理：
 
 ```bash
-.venv/bin/python examples/generators/breakfast_cat.py --out output/my-cat
+.venv/bin/python examples/generators/loose_fruit_studies.py --out output/fruits
+.venv/bin/python examples/generators/strawberry_texture_study.py --out output/strawberry
 ```
 
 需要自己组织物件时，可以使用 [`scene_tools.py`](scripts/scene_tools.py) 的曲线、椭圆、变换和对象工具。它生成的仍然是 `version: 1` 场景，和现有渲染命令兼容。
@@ -127,6 +146,8 @@ leaf.line("vein", [[300, 490], [350, 370], [392, 273]],
           width=1.6, opacity=0.7)
 s.save("leaf.json")
 ```
+
+第一条生成水果初稿（含草莓修改前的版本）；第二条基于保留的草莓场景，只更新果皮与籽图层。也可给第一条加 `--fruit mandarin`、`pear` 或 `peach` 单独出图。
 
 从脚本使用时将仓库的 `scripts` 目录加入 Python 的模块搜索路径；六份生成脚本展示了不依赖当前工作目录的写法。
 
@@ -154,7 +175,7 @@ my-drawing/
 
 ## 来源与许可
 
-这个项目从 [盏与 North 的 pencil-case](https://github.com/Qizhan7/pencil-case) 学习程序化蜡笔与钢笔淡彩的思路，保留两份原始笔刷代码，并增加了统一场景、纸面相关笔触、局部编辑、构图指南及这组六幅原创场景。
+这个项目从 [盏与 North 的 pencil-case](https://github.com/Qizhan7/pencil-case) 学习程序化蜡笔与钢笔淡彩的思路，保留两份原始笔刷代码，并增加了统一场景、纸面相关笔触、局部编辑、构图指南、水果材质试稿及六幅故事场景。
 
 原作者：**Sienna Qi（戚盏）与 North**。改编与维护：**[xiaomangoyu](https://github.com/xiaomangoyu)**，使用 AI 辅助开发与创作。
 

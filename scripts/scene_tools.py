@@ -77,8 +77,18 @@ def clone_object(obj, new_id, *, translate=(0,0), scale=1, rotate=0, origin=(0,0
         key='points' if mark['kind'] in ('ink','pencil') else 'polygon'
         pts=transform(mark[key],translate=old_offset)
         mark[key]=transform(pts,translate=translate,scale=scale,rotate=rotate,origin=origin)
+        if 'clip_polygons' in mark:
+            mark['clip_polygons']=[transform(transform(p,translate=old_offset),translate=translate,
+                                             scale=scale,rotate=rotate,origin=origin)
+                                   for p in mark['clip_polygons']]
+        if 'gradient' in mark:
+            for endpoint in ('start','end'):
+                pts=transform([mark['gradient'][endpoint]],translate=old_offset)
+                mark['gradient'][endpoint]=transform(pts,translate=translate,scale=scale,rotate=rotate,origin=origin)[0]
         for key,default in size_defaults[mark['kind']].items():
             mark[key]=mark.get(key,default)*factor
+        if 'spread' in mark:
+            mark['spread']*=factor
         if mark['kind'] in direction_defaults:
             key,default=direction_defaults[mark['kind']]
             angle=math.radians(mark.get(key,default))

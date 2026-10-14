@@ -1,0 +1,12 @@
+{
+  "engine": "pencil-case",
+  "marks_by_kind": {
+    "wax": 3396,
+    "hatch": 11,
+    "ink": 1247
+  },
+  "objects": 53,
+  "layers_recompose_exactly": true,
+  "upstream_brush_hashes_verified": true,
+  "warnings": []
+}

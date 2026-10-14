@@ -1,0 +1,592 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "住宅剖面 · 鲜色与水彩晕染",
+  "engine": "pencil-case",
+  "seed": 73109,
+  "size": [
+    1354,
+    1332
+  ],
+  "layers": [
+    {
+      "id": "wet-atmosphere",
+      "name": "少量明亮洗色，边缘留白",
+      "visible": true,
+      "bounds": [
+        29,
+        314,
+        924,
+        722
+      ],
+      "file": "layers/wet-atmosphere.png",
+      "sha256": "31f0e7eea669d41b983f695f44315c15e707e0f72c05fafc2eb237a10634253e"
+    },
+    {
+      "id": "chromatic-shadows",
+      "name": "家具接触处的钴蓝与蓝紫阴影",
+      "visible": true,
+      "bounds": [
+        135,
+        528,
+        1077,
+        1054
+      ],
+      "file": "layers/chromatic-shadows.png",
+      "sha256": "7685d8c84f4cc7b7db3664eee9b9d019bd84e0747c96834c4c4d8e1124dc95f7"
+    },
+    {
+      "id": "stair-pigments",
+      "name": "楼梯上断续的赭黄和蓝紫",
+      "visible": true,
+      "bounds": [
+        669,
+        733,
+        909,
+        1023
+      ],
+      "file": "layers/stair-pigments.png",
+      "sha256": "6545aeba16b672a243f018852a55a527557f5416d46775ed1960685a5da9bf25"
+    },
+    {
+      "id": "pigment-lower-laundry",
+      "name": "下层洗衣间",
+      "visible": true,
+      "bounds": [
+        100,
+        703,
+        200,
+        796
+      ],
+      "file": "layers/pigment-lower-laundry.png",
+      "sha256": "b748e341ed904771d7ccfac5c64091fb6b8321f62acd82bc48cc6897f00df410"
+    },
+    {
+      "id": "pigment-bedroom-fittings",
+      "name": "卧室画框、书架、床头灯",
+      "visible": true,
+      "bounds": [
+        180,
+        256,
+        281,
+        379
+      ],
+      "file": "layers/pigment-bedroom-fittings.png",
+      "sha256": "6625264848ec4fb90adba1e7551cd728473dc38d6baf464a37eb6b4af650dc78"
+    },
+    {
+      "id": "pigment-bed",
+      "name": "床、毯子与床柱",
+      "visible": true,
+      "bounds": [
+        100,
+        403,
+        344,
+        624
+      ],
+      "file": "layers/pigment-bed.png",
+      "sha256": "4b049f3ac8e6137999230d60011d661152f47b0ad04191c570bef5d394f539d1"
+    },
+    {
+      "id": "pigment-bedroom-woman",
+      "name": "卧室：坐在床沿的老人",
+      "visible": true,
+      "bounds": [
+        158,
+        443,
+        223,
+        558
+      ],
+      "file": "layers/pigment-bedroom-woman.png",
+      "sha256": "70af40bac2492f0fda59e2a4d02fc5900b0271b981e8bf6e315b86e9669b3baa"
+    },
+    {
+      "id": "pigment-hall-laundry",
+      "name": "熨衣板、地毯与洗衣篮",
+      "visible": true,
+      "bounds": [
+        463,
+        585,
+        536,
+        661
+      ],
+      "file": "layers/pigment-hall-laundry.png",
+      "sha256": "bb69ff494658b9d51c21f60c70b4f0370694cc4bb9729622a5201cbf27308290"
+    },
+    {
+      "id": "pigment-living-fittings",
+      "name": "书架、镜子、暖色画与电视柜",
+      "visible": true,
+      "bounds": [
+        992,
+        392,
+        1072,
+        550
+      ],
+      "file": "layers/pigment-living-fittings.png",
+      "sha256": "8729023250d1fadb0fce2e31513b87c9c1b366bb4e8bc9ed612e57504a14f280"
+    },
+    {
+      "id": "pigment-living-sofa",
+      "name": "有人倚坐的绿沙发",
+      "visible": true,
+      "bounds": [
+        863,
+        495,
+        1011,
+        669
+      ],
+      "file": "layers/pigment-living-sofa.png",
+      "sha256": "274c4e320d5200f26bf7112d455a5d7c600d1a2468ca88558c3f97e7ae29035e"
+    },
+    {
+      "id": "pigment-sofa-person",
+      "name": "客厅：蜷坐在沙发上的人",
+      "visible": true,
+      "bounds": [
+        893,
+        518,
+        1017,
+        589
+      ],
+      "file": "layers/pigment-sofa-person.png",
+      "sha256": "c9bfc444740e771a74150bee6b4ac35178466c4d4293cd18f21d4dceb10d0c83"
+    },
+    {
+      "id": "pigment-standing-person",
+      "name": "客厅：递东西的人",
+      "visible": true,
+      "bounds": [
+        793,
+        535,
+        875,
+        706
+      ],
+      "file": "layers/pigment-standing-person.png",
+      "sha256": "18153521eb53d51a23a796f976d43467f3e55f3c37b5460aa9ea4771588629cd"
+    },
+    {
+      "id": "pigment-coffee-table",
+      "name": "茶几、披萨与散放的小物",
+      "visible": true,
+      "bounds": [
+        956,
+        605,
+        1136,
+        750
+      ],
+      "file": "layers/pigment-coffee-table.png",
+      "sha256": "3d8c8f6329852e8cc014da3d3aa45c9de6b784156c8a8564a7c62598ab9b3988"
+    },
+    {
+      "id": "pigment-floor-child",
+      "name": "客厅：坐在地毯上看电视的孩子",
+      "visible": true,
+      "bounds": [
+        1057,
+        674,
+        1119,
+        735
+      ],
+      "file": "layers/pigment-floor-child.png",
+      "sha256": "cc3a851500cd4e8403e56fd8d2f5f31c4f672c57362b39530cb94d613efa5782"
+    },
+    {
+      "id": "pigment-entry-woman",
+      "name": "玄关：刚回家的人",
+      "visible": true,
+      "bounds": [
+        858,
+        880,
+        941,
+        1039
+      ],
+      "file": "layers/pigment-entry-woman.png",
+      "sha256": "14b693fb03da132c2660be729fed6518887a6e5b3e1c7c5a9f4139dd598f336d"
+    },
+    {
+      "id": "pigment-front-door",
+      "name": "向观者打开的红门",
+      "visible": true,
+      "bounds": [
+        990,
+        859,
+        1053,
+        1062
+      ],
+      "file": "layers/pigment-front-door.png",
+      "sha256": "86fe84877821c39f135a1c5560130918eba00545c7a8f311525d8eb749673307"
+    },
+    {
+      "id": "lower-shell",
+      "name": "下层的暗墙与地面",
+      "visible": true,
+      "bounds": [
+        39,
+        562,
+        1298,
+        1082
+      ],
+      "file": "layers/lower-shell.png",
+      "sha256": "119a075a247452f1638ec843b67018f1bb24d4c1a33918c94bcbfa378af4d31e"
+    },
+    {
+      "id": "lower-laundry",
+      "name": "下层洗衣间",
+      "visible": true,
+      "bounds": [
+        43,
+        569,
+        195,
+        790
+      ],
+      "file": "layers/lower-laundry.png",
+      "sha256": "d36406c463d483defc598230602661d67fd17aa454296fdcb0dcc33949244669"
+    },
+    {
+      "id": "lower-bicycle-store",
+      "name": "下层单车储藏",
+      "visible": true,
+      "bounds": [
+        225,
+        720,
+        355,
+        847
+      ],
+      "file": "layers/lower-bicycle-store.png",
+      "sha256": "dcc9962caa73c83bd44f4211d20fe155d3abd816be7c7c47cc78a0cba39a2de7"
+    },
+    {
+      "id": "lower-dining",
+      "name": "下层餐室",
+      "visible": true,
+      "bounds": [
+        384,
+        766,
+        618,
+        939
+      ],
+      "file": "layers/lower-dining.png",
+      "sha256": "5b9ab038373e08abf9d145ec277a36d2922db4fe99951ef4dd401f4101c04314"
+    },
+    {
+      "id": "lower-kitchen",
+      "name": "下层厨房一角",
+      "visible": true,
+      "bounds": [
+        1149,
+        755,
+        1288,
+        902
+      ],
+      "file": "layers/lower-kitchen.png",
+      "sha256": "ce7ab4fb6017ddb2d9716e030b0b1cea05cf46d8399ef784cd2c8ff29cdc8095"
+    },
+    {
+      "id": "upper-floor",
+      "name": "连续楼板与楼梯开口",
+      "visible": true,
+      "bounds": [
+        39,
+        515,
+        901,
+        721
+      ],
+      "file": "layers/upper-floor.png",
+      "sha256": "7807b378787c72e2e3ff729615700458d6db8e1760b9e240bc3a22431a5bd8e3"
+    },
+    {
+      "id": "bedroom-walls",
+      "name": "冷蓝卧室墙面",
+      "visible": true,
+      "bounds": [
+        33,
+        243,
+        529,
+        546
+      ],
+      "file": "layers/bedroom-walls.png",
+      "sha256": "b04216035ce96bfc91ca5e5dd5acc462add1921fc84677bc8625fa0884f6c46c"
+    },
+    {
+      "id": "bathroom",
+      "name": "后侧的深紫浴室",
+      "visible": true,
+      "bounds": [
+        534,
+        259,
+        984,
+        488
+      ],
+      "file": "layers/bathroom.png",
+      "sha256": "44ea22783ce54cbcef7a1078db4834375aa003846e4a22e0711b81f32245c73a"
+    },
+    {
+      "id": "living-wall",
+      "name": "灰粉色的客厅墙",
+      "visible": true,
+      "bounds": [
+        838,
+        367,
+        1304,
+        680
+      ],
+      "file": "layers/living-wall.png",
+      "sha256": "22079411b290a03a606ef4179d0de8d71a4d337966f0c435b9279655d6e0e9d7"
+    },
+    {
+      "id": "bedroom-fittings",
+      "name": "卧室画框、书架、床头灯",
+      "visible": true,
+      "bounds": [
+        93,
+        260,
+        437,
+        469
+      ],
+      "file": "layers/bedroom-fittings.png",
+      "sha256": "8ae00bd00f137e22322a6537d0894f88c84adcbb63ed597eeb65bc41aadf54c7"
+    },
+    {
+      "id": "bed",
+      "name": "床、毯子与床柱",
+      "visible": true,
+      "bounds": [
+        103,
+        396,
+        340,
+        619
+      ],
+      "file": "layers/bed.png",
+      "sha256": "1c74ff5e1e1fc65f6f65baa277aff9ac2627b026209dbccace5e95de292938db"
+    },
+    {
+      "id": "bedroom-woman",
+      "name": "卧室：坐在床沿的老人",
+      "visible": true,
+      "bounds": [
+        162,
+        424,
+        220,
+        559
+      ],
+      "file": "layers/bedroom-woman.png",
+      "sha256": "9e94cf24985114ab499d53a88009ecdeb7f9bd8e94febf70cd09a1d2ea662a28"
+    },
+    {
+      "id": "bedroom-window",
+      "name": "推开的卧室窗",
+      "visible": true,
+      "bounds": [
+        62,
+        384,
+        144,
+        536
+      ],
+      "file": "layers/bedroom-window.png",
+      "sha256": "6fc2f5168d054bae03426968a928422417ecaf5af69f1618b621348406175a9a"
+    },
+    {
+      "id": "hall-wall",
+      "name": "橄榄色走廊与两扇门",
+      "visible": true,
+      "bounds": [
+        364,
+        360,
+        838,
+        656
+      ],
+      "file": "layers/hall-wall.png",
+      "sha256": "654758d5a1d68121cc64c38d327e91116e00765771a3f2f46a25229a29809a34"
+    },
+    {
+      "id": "hall-laundry",
+      "name": "熨衣板、地毯与洗衣篮",
+      "visible": true,
+      "bounds": [
+        418,
+        590,
+        697,
+        729
+      ],
+      "file": "layers/hall-laundry.png",
+      "sha256": "024d99205c11b0512b2d95f5ee8a6f26962a467218f0766a0a1873406b340668"
+    },
+    {
+      "id": "living-fittings",
+      "name": "书架、镜子、暖色画与电视柜",
+      "visible": true,
+      "bounds": [
+        874,
+        397,
+        1278,
+        678
+      ],
+      "file": "layers/living-fittings.png",
+      "sha256": "21cf064305daa1ddb1c439c1aa2f1a31049b422e72b0c246c4071c2cbdedb172"
+    },
+    {
+      "id": "living-sofa",
+      "name": "有人倚坐的绿沙发",
+      "visible": true,
+      "bounds": [
+        859,
+        500,
+        1022,
+        675
+      ],
+      "file": "layers/living-sofa.png",
+      "sha256": "746c65664d6b3b83b82e4475c24cd0ffe4c24610e36bea2d243ca8864e75e542"
+    },
+    {
+      "id": "sofa-person",
+      "name": "客厅：蜷坐在沙发上的人",
+      "visible": true,
+      "bounds": [
+        897,
+        497,
+        1021,
+        586
+      ],
+      "file": "layers/sofa-person.png",
+      "sha256": "c483911ff890f4a5e00466f914fad8d859a3fb74b6ba2702c9623df287b382d9"
+    },
+    {
+      "id": "standing-person",
+      "name": "客厅：递东西的人",
+      "visible": true,
+      "bounds": [
+        776,
+        514,
+        897,
+        706
+      ],
+      "file": "layers/standing-person.png",
+      "sha256": "def309489a04f0c530d32c40633274cf81506a24bba8d21aafc72c3b20347219"
+    },
+    {
+      "id": "coffee-table",
+      "name": "茶几、披萨与散放的小物",
+      "visible": true,
+      "bounds": [
+        960,
+        594,
+        1158,
+        744
+      ],
+      "file": "layers/coffee-table.png",
+      "sha256": "b39a313b2666a1facc27fd084495998864f1dbd9431ee291a4fb526c9c955be8"
+    },
+    {
+      "id": "floor-child",
+      "name": "客厅：坐在地毯上看电视的孩子",
+      "visible": true,
+      "bounds": [
+        1058,
+        655,
+        1142,
+        733
+      ],
+      "file": "layers/floor-child.png",
+      "sha256": "89193a68b29b2b2d4a9a05bd675f19123468b8a1efa84361028b313c0dfd5786"
+    },
+    {
+      "id": "staircase",
+      "name": "连接上下层的楼梯",
+      "visible": true,
+      "bounds": [
+        657,
+        719,
+        970,
+        1040
+      ],
+      "file": "layers/staircase.png",
+      "sha256": "9cee78b74c4e9c84da1c10abbf5e29fbefa5c867270af615da2dd2bf28772d50"
+    },
+    {
+      "id": "upper-railing",
+      "name": "楼梯口与客厅前沿的木栏杆",
+      "visible": true,
+      "bounds": [
+        726,
+        614,
+        1054,
+        992
+      ],
+      "file": "layers/upper-railing.png",
+      "sha256": "ddfc426e3e8ac2d5a579be9a4bfd6bcf7271c1b2e1521ada5bf1871561f19b46"
+    },
+    {
+      "id": "entry-details",
+      "name": "门口的衣物、鞋与门垫",
+      "visible": true,
+      "bounds": [
+        921,
+        789,
+        1150,
+        1046
+      ],
+      "file": "layers/entry-details.png",
+      "sha256": "715e58477a7220cbecbb67d196b28912f1d044946269a843e073741e0767178e"
+    },
+    {
+      "id": "entry-woman",
+      "name": "玄关：刚回家的人",
+      "visible": true,
+      "bounds": [
+        862,
+        859,
+        955,
+        1033
+      ],
+      "file": "layers/entry-woman.png",
+      "sha256": "f70155566f61a3d4c129936c28f73dbb0aa1616f2e7e591a73e25185e6d02e3a"
+    },
+    {
+      "id": "front-door",
+      "name": "向观者打开的红门",
+      "visible": true,
+      "bounds": [
+        986,
+        833,
+        1063,
+        1078
+      ],
+      "file": "layers/front-door.png",
+      "sha256": "229bb027f8ac46700adade511fb2995da186f58251272bd6fc1dbed9c9e8cf3e"
+    },
+    {
+      "id": "section-edges",
+      "name": "楼板与墙体的剖面收口",
+      "visible": true,
+      "bounds": [
+        32,
+        549,
+        1304,
+        1091
+      ],
+      "file": "layers/section-edges.png",
+      "sha256": "0ce61406823d0167796a6a2cb5d5e83a1b05e0b1eae740bd0df7b473380952b1"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "73633d14378a0dde350d9d8c6d9cc98bf925f466c6795086379a3aaeec506c69",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "f929ffa3b4d48868143d0ed35c941e21063571d53ecdcece7c72620b6ba7dea9",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e",
+    "pencil_case_media.py": "ff0d9acbb60e0489da90856facf1601d86add310bdd0315b698fadd13493e6c7",
+    "vendor/penwash_lib.py": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "整颗剥皮橘子 · 松散彩色干笔",
+  "engine": "pencil-case",
+  "seed": 84617,
+  "size": [
+    900,
+    900
+  ],
+  "layers": [
+    {
+      "id": "contact-shadow",
+      "name": "contact-shadow",
+      "visible": true,
+      "bounds": [
+        248,
+        553,
+        679,
+        661
+      ],
+      "file": "layers/contact-shadow.png",
+      "sha256": "7d422cc45e6a420f33573ed2e952667f3a3b39214edeeb3b52aae8be7e64526a"
+    },
+    {
+      "id": "back-peel-pith",
+      "name": "back-peel-pith",
+      "visible": true,
+      "bounds": [
+        304,
+        165,
+        455,
+        254
+      ],
+      "file": "layers/back-peel-pith.png",
+      "sha256": "8d287e5df528eddb688b4061390114ebe5474fdf12f2a354464b0eefc3155ba1"
+    },
+    {
+      "id": "back-peel-green",
+      "name": "back-peel-green",
+      "visible": true,
+      "bounds": [
+        310,
+        158,
+        437,
+        199
+      ],
+      "file": "layers/back-peel-green.png",
+      "sha256": "ba80c1f4e60f2469628e2718758984aab84d5263462f1fcbe0555eae8982979b"
+    },
+    {
+      "id": "back-peel-edge",
+      "name": "back-peel-edge",
+      "visible": true,
+      "bounds": [
+        296,
+        154,
+        469,
+        283
+      ],
+      "file": "layers/back-peel-edge.png",
+      "sha256": "d3fa8412c63f86dbe9bfc2362ddb10d0e86546559d9b67ae9ab997122576b6c5"
+    },
+    {
+      "id": "left-peel-pith",
+      "name": "left-peel-pith",
+      "visible": true,
+      "bounds": [
+        163,
+        320,
+        288,
+        553
+      ],
+      "file": "layers/left-peel-pith.png",
+      "sha256": "ee79a1522d7058bf097a14404ac1fdbd2f9b6d18fb42739c0315e76d81dd0f32"
+    },
+    {
+      "id": "left-peel-green",
+      "name": "left-peel-green",
+      "visible": true,
+      "bounds": [
+        156,
+        344,
+        228,
+        539
+      ],
+      "file": "layers/left-peel-green.png",
+      "sha256": "a333516b9d95f2bd464657a94e1ee52d05f4ff3a5aac361961aa67fc03912936"
+    },
+    {
+      "id": "left-peel-edge",
+      "name": "left-peel-edge",
+      "visible": true,
+      "bounds": [
+        155,
+        300,
+        299,
+        562
+      ],
+      "file": "layers/left-peel-edge.png",
+      "sha256": "e33bee03e488bbd3fa78583006f5512c75b5768f3f4aaaf4a17755bb9bf2564a"
+    },
+    {
+      "id": "right-peel-pith",
+      "name": "right-peel-pith",
+      "visible": true,
+      "bounds": [
+        617,
+        421,
+        767,
+        606
+      ],
+      "file": "layers/right-peel-pith.png",
+      "sha256": "6ec2e9d3e3b8661db9f98beb807e5a5fad08a9fc5122ab86a9b373a18d950cb5"
+    },
+    {
+      "id": "right-peel-green",
+      "name": "right-peel-green",
+      "visible": true,
+      "bounds": [
+        659,
+        418,
+        771,
+        610
+      ],
+      "file": "layers/right-peel-green.png",
+      "sha256": "f29dd1b4433997b16f42792d708557872f34ffaa51c5babefc4d48316ecc7e54"
+    },
+    {
+      "id": "right-peel-edge",
+      "name": "right-peel-edge",
+      "visible": true,
+      "bounds": [
+        608,
+        390,
+        773,
+        616
+      ],
+      "file": "layers/right-peel-edge.png",
+      "sha256": "c687b3a04f85f13984e5c2a54fe591dfd73b79c3aafb4425493058e18787d655"
+    },
+    {
+      "id": "front-peel-pith",
+      "name": "front-peel-pith",
+      "visible": true,
+      "bounds": [
+        320,
+        601,
+        502,
+        723
+      ],
+      "file": "layers/front-peel-pith.png",
+      "sha256": "e0f909e554dd76d383df5d3248367ccf634c81271ad6a78785b7fe6e730a7936"
+    },
+    {
+      "id": "front-peel-green",
+      "name": "front-peel-green",
+      "visible": true,
+      "bounds": [
+        309,
+        690,
+        453,
+        753
+      ],
+      "file": "layers/front-peel-green.png",
+      "sha256": "aed1ccd2ed42474b5b4efbff8c1dda2a3a1327bbbc3f1d7e931fa1a700207a19"
+    },
+    {
+      "id": "front-peel-edge",
+      "name": "front-peel-edge",
+      "visible": true,
+      "bounds": [
+        297,
+        649,
+        512,
+        753
+      ],
+      "file": "layers/front-peel-edge.png",
+      "sha256": "6d85f724075e74fa54e861c967d8f41459648ecf67f327d79b900db21c3b209f"
+    },
+    {
+      "id": "fruit-flesh",
+      "name": "鼓起的橘瓣与不规则线束",
+      "visible": true,
+      "bounds": [
+        248,
+        268,
+        678,
+        596
+      ],
+      "file": "layers/fruit-flesh.png",
+      "sha256": "6bf21034104ffcd698ebc940e86760c64f3b05d00a26c0bc4a1cf082c519d963"
+    },
+    {
+      "id": "fruit-contours",
+      "name": "局部轮廓与橘络",
+      "visible": true,
+      "bounds": [
+        264,
+        265,
+        677,
+        604
+      ],
+      "file": "layers/fruit-contours.png",
+      "sha256": "26bac31e477bd44e1ceb260807158510a59a4c4bed115b95a7c78b42463cf355"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "0c4959bef7df23ff5de53291b0f16d4369dc11e716ebcc70e387bc159e6cafc0",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "f929ffa3b4d48868143d0ed35c941e21063571d53ecdcece7c72620b6ba7dea9",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e",
+    "pencil_case_media.py": "ff0d9acbb60e0489da90856facf1601d86add310bdd0315b698fadd13493e6c7",
+    "vendor/penwash_lib.py": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

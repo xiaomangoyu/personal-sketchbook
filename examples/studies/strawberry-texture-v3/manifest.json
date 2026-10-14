@@ -1,0 +1,241 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "一颗草莓 · 松散彩色干笔",
+  "engine": "pencil-case",
+  "seed": 84620,
+  "size": [
+    900,
+    900
+  ],
+  "layers": [
+    {
+      "id": "contact-shadow",
+      "name": "contact-shadow",
+      "visible": true,
+      "bounds": [
+        369,
+        641,
+        587,
+        738
+      ],
+      "file": "layers/contact-shadow.png",
+      "sha256": "a8872604babc172e631f6eb011b4a70796b8e025ac43d63d1d84bf99edd74635"
+    },
+    {
+      "id": "berry-skin",
+      "name": "berry-skin",
+      "visible": true,
+      "bounds": [
+        290,
+        298,
+        634,
+        695
+      ],
+      "file": "layers/berry-skin.png",
+      "sha256": "ae2c0086f4f88baa32b9404edb21494d8de358d75423c654132a2ec845ce7b1a"
+    },
+    {
+      "id": "berry-seeds",
+      "name": "berry-seeds",
+      "visible": true,
+      "bounds": [
+        313,
+        305,
+        620,
+        666
+      ],
+      "file": "layers/berry-seeds.png",
+      "sha256": "8f945c1b580127a87f296c9d420732b65a8babaa620f0c4f09502005ba4c3f48"
+    },
+    {
+      "id": "calyx-0",
+      "name": "calyx-0",
+      "visible": true,
+      "bounds": [
+        371,
+        272,
+        454,
+        311
+      ],
+      "file": "layers/calyx-0.png",
+      "sha256": "c8ad14fd3b7c3d9be79f60652fd9f498ced0832b96a43b07fe714ad88fc07c2e"
+    },
+    {
+      "id": "calyx-0-vein",
+      "name": "calyx-0-vein",
+      "visible": true,
+      "bounds": [
+        347,
+        258,
+        458,
+        303
+      ],
+      "file": "layers/calyx-0-vein.png",
+      "sha256": "5112f8318edec7a38335ca166bafda04548bdcfdbd273653d8bc35b8fa033ef3"
+    },
+    {
+      "id": "calyx-1",
+      "name": "calyx-1",
+      "visible": true,
+      "bounds": [
+        437,
+        235,
+        473,
+        290
+      ],
+      "file": "layers/calyx-1.png",
+      "sha256": "77fa8d298a8f5f2e936efffc0824a6fd65ce1052c6d1ae0d2a4e8329d2971240"
+    },
+    {
+      "id": "calyx-1-vein",
+      "name": "calyx-1-vein",
+      "visible": true,
+      "bounds": [
+        416,
+        231,
+        462,
+        296
+      ],
+      "file": "layers/calyx-1-vein.png",
+      "sha256": "24b7fbd511c17564421b21fc17b9105e555b8628e25d3cc1c34f7815eeb52e7e"
+    },
+    {
+      "id": "calyx-2",
+      "name": "calyx-2",
+      "visible": true,
+      "bounds": [
+        468,
+        229,
+        529,
+        302
+      ],
+      "file": "layers/calyx-2.png",
+      "sha256": "9e6476e0059bb76e3106a306061b2a006025fa6a7d6232a84c5a5f04c5d4bcca"
+    },
+    {
+      "id": "calyx-2-vein",
+      "name": "calyx-2-vein",
+      "visible": true,
+      "bounds": [
+        467,
+        227,
+        526,
+        296
+      ],
+      "file": "layers/calyx-2-vein.png",
+      "sha256": "01bbddb9a157481975d2abf47dfa70c739a8f7a51c45e47ab0b1d107e27b7285"
+    },
+    {
+      "id": "calyx-3",
+      "name": "calyx-3",
+      "visible": true,
+      "bounds": [
+        477,
+        279,
+        594,
+        317
+      ],
+      "file": "layers/calyx-3.png",
+      "sha256": "135a611c4b79f9ae9eaa1213b96fb24f4fc48579e6c4205aa323cf30cfad4bab"
+    },
+    {
+      "id": "calyx-3-vein",
+      "name": "calyx-3-vein",
+      "visible": true,
+      "bounds": [
+        478,
+        292,
+        596,
+        306
+      ],
+      "file": "layers/calyx-3-vein.png",
+      "sha256": "191b62b4f344d19240322408e4f9353cc5b88629b3aa5e3c46eae46a105181ed"
+    },
+    {
+      "id": "calyx-4",
+      "name": "calyx-4",
+      "visible": true,
+      "bounds": [
+        422,
+        304,
+        469,
+        349
+      ],
+      "file": "layers/calyx-4.png",
+      "sha256": "bd0b676afa502f160d6639e39fe8398db75f0cc7f5ff2d40790250253535d956"
+    },
+    {
+      "id": "calyx-4-vein",
+      "name": "calyx-4-vein",
+      "visible": true,
+      "bounds": [
+        421,
+        303,
+        462,
+        350
+      ],
+      "file": "layers/calyx-4-vein.png",
+      "sha256": "f5e27cc3f8785611efdf016b3ec836cd0fc85dfb961a08e5ed1621dc1501ef0b"
+    },
+    {
+      "id": "calyx-5",
+      "name": "calyx-5",
+      "visible": true,
+      "bounds": [
+        472,
+        306,
+        515,
+        344
+      ],
+      "file": "layers/calyx-5.png",
+      "sha256": "bdcdfd5e9e6eef02bb60f893cae1f1f3629bccd1cd6157405b05b265e6523ce1"
+    },
+    {
+      "id": "calyx-5-vein",
+      "name": "calyx-5-vein",
+      "visible": true,
+      "bounds": [
+        478,
+        307,
+        521,
+        348
+      ],
+      "file": "layers/calyx-5-vein.png",
+      "sha256": "f25003461710910c68630b03a7141b26796b0475d04ae0fdda56b83c46a5c05d"
+    },
+    {
+      "id": "berry-contour",
+      "name": "berry-contour",
+      "visible": true,
+      "bounds": [
+        291,
+        241,
+        636,
+        708
+      ],
+      "file": "layers/berry-contour.png",
+      "sha256": "93e6e6aea27cb5994ee3dc52a98c902566a76a44d2aa736f9bfdf7fa038b88f5"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "5deb0f8ae52f4e59ef77b75a2becd245ae04014aa531c36fc006e9ea960e4557",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "f929ffa3b4d48868143d0ed35c941e21063571d53ecdcece7c72620b6ba7dea9",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e",
+    "pencil_case_media.py": "ff0d9acbb60e0489da90856facf1601d86add310bdd0315b698fadd13493e6c7",
+    "vendor/penwash_lib.py": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

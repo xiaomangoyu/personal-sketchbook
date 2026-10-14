@@ -1,6 +1,6 @@
 ---
 name: personal-sketchbook
-description: 用可编辑的 Python 程序化笔触创作或修改有个人手感的蜡笔、铅笔、钢笔淡彩插画；适用于随手画、手绘感、降低画面模板感、按参考重画和局部调整。重视具体形状、构图与用笔，输出图片和可继续修改的源文件。
+description: 用可编辑的 Python 程序化笔触创作或修改蜡笔、铅笔、钢笔淡彩与彩色线描插画；适用于随手画、手绘感、顺形短排线、按参考重画和局部调整。重视具体形状、构图与用笔，输出图片和可继续修改的源文件。
 ---
 
 # 随手画 · Personal Sketchbook
@@ -13,6 +13,8 @@ description: 用可编辑的 Python 程序化笔触创作或修改有个人手�
 - 收到参考先实际看图，区分保留物件/构图/线条/配色中的哪些。用户要求还原、临摹自己提供的图或保留构图时照做；重构须有依据，不自动删背景、限制三件物品或虚构故事。
 - 没指定媒介时：观察轮廓、物件结构适合钢笔淡彩；色块和温暖厚度适合蜡笔；找形、灰阶或少量颜色适合铅笔。说明所选方向即可，不要求用户逐项填表。
 - 开始构图或收到“太 AI / 太规整 / 太乱”的反馈时，读 [references/art-direction.md](references/art-direction.md)。先解决主次、比例、姿态和结构，纹理留到后面。
+- 用户要“简练、轻松、留白、水彩渐变／晕染、线条浓淡虚实”时，读 [references/light-watercolour.md](references/light-watercolour.md)。先取舍重复细节，再安排墨线轻重、颜料浓淡与软硬边；明亮水彩也可以有鲜色和带颜色的阴影，不应一律画成灰淡线稿。这是一种可选画法，不覆盖用户指定的厚涂或完整细节。
+- 用户选择彩色线描、干笔短排线、用白缝表现果肉或叶脉时，读 [references/coloured-linework.md](references/coloured-linework.md)。用有色线束沿形体形成颜色，把纸白作为结构保留；不要自动套用水彩晕染。整颗剥皮水果先画鼓起的果瓣和纵向弯缝，不能用均匀扇形代替体积；松散笔触需改变局部疏密，而不是给规则模板加抖动。
 - 不自动加标题、日期、口号、装饰或署名。用户提供的文字、身份和经历以原话为准。
 
 ## 绘制
@@ -26,6 +28,7 @@ python3 "<skill>/scripts/render.py" "<作品目录>/scene.json" --out "<作品�
 依赖 Python、Pillow、NumPy；仓库锁定依赖要求 Python 3.11 或以上。先检查当前 Python 能否导入；缺依赖时优先使用现有可用环境，确需安装则放隔离环境，避免改动其他项目依赖。
 
 - 对照 pencil-case 的钢笔速写、淡彩或蜡笔质感时，使用场景顶层 `engine: "pencil-case"`，直接调用保留的原笔刷。新增的自然媒介引擎与它笔触不同，不能只因同叫 `wash` / `wax` 就替换。默认引擎保持旧作品兼容；五种笔触的实际实现见 [绘图接口](references/render-api.md#pencil-case-上游笔刷)。
+- 彩色干笔的参考案例见 [水果画廊](README.md#最近画的四种水果)：整颗橘子用随体积转折的线束，梨和桃子保留不同形体，草莓用短碎色笔与籽窝。用户已选择这组案例；借用其观察方法，不把同一纹理套给所有材质。草莓优先使用 [修订版源场景](examples/studies/strawberry-texture-v3/scene.json)。
 - 钢笔淡彩的新方向样张见 [纸袋猫试稿](examples/studies/breakfast-cat-v2/artwork.png) 和 [生成脚本](examples/generators/breakfast_cat_study.py)。脚本的 `--ink-only` 可先检查姿态、受力和轮廓取舍；去掉颜色后仍应读到动作，再铺局部色。它是一次方向试稿，不代表用户已经认可的通用风格。
 - `assets/examples/quiet-desk.json` 和 `assets/examples/window-plant.json` 保留为数据格式入门；不能据此要求新画都采用完整底色或居中的静物构图。
 - 想看完整故事、街景、动物或风景时，先看 [README 场景画廊](README.md)；六幅画的图片、JSON 和生成脚本一一对应。只读当前题材相关的脚本，不要同时加载所有大场景。鲜活手帐是这组展示的方向，不覆盖用户另选的气质。

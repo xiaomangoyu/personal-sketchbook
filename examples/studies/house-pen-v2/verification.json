@@ -1,0 +1,12 @@
+{
+  "engine": "pencil-case",
+  "actual_upstream_calls": {
+    "pen_path": 1434,
+    "wash": 19,
+    "hatch": 11
+  },
+  "scene_marks": 1277,
+  "layers_recompose_exactly": true,
+  "vendor_penwash_sha256": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482",
+  "warnings": []
+}

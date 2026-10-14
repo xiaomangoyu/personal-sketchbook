@@ -1,0 +1,111 @@
+{
+  "renderer": "personal-sketchbook/1",
+  "title": "歪一点的梨 · 松散彩色干笔",
+  "engine": "pencil-case",
+  "seed": 84618,
+  "size": [
+    900,
+    900
+  ],
+  "layers": [
+    {
+      "id": "contact-shadow",
+      "name": "contact-shadow",
+      "visible": true,
+      "bounds": [
+        272,
+        632,
+        599,
+        711
+      ],
+      "file": "layers/contact-shadow.png",
+      "sha256": "a48f716ca3471fcddcf4bf24f6c8103fa3157e948b7fce3f35a4fcfa45880c2e"
+    },
+    {
+      "id": "pear-leaf",
+      "name": "pear-leaf",
+      "visible": true,
+      "bounds": [
+        492,
+        160,
+        595,
+        243
+      ],
+      "file": "layers/pear-leaf.png",
+      "sha256": "ab53137a0287469c02d6b8f8266ed6d878e978750e341cf1b2703a30dbf7167b"
+    },
+    {
+      "id": "pear-leaf-vein",
+      "name": "pear-leaf-vein",
+      "visible": true,
+      "bounds": [
+        488,
+        162,
+        594,
+        244
+      ],
+      "file": "layers/pear-leaf-vein.png",
+      "sha256": "6f3da26823cf7c6ae986701e6a067516bdf0e238fdc0a879de1ba4ce4ac9f74a"
+    },
+    {
+      "id": "pear-stem",
+      "name": "pear-stem",
+      "visible": true,
+      "bounds": [
+        470,
+        181,
+        493,
+        271
+      ],
+      "file": "layers/pear-stem.png",
+      "sha256": "7b76e96dca0f74abcbe42a1c7f2fb1b8b1cc3a20259dfe3e97b83702a24bfb88"
+    },
+    {
+      "id": "pear-skin",
+      "name": "pear-skin",
+      "visible": true,
+      "bounds": [
+        282,
+        260,
+        590,
+        672
+      ],
+      "file": "layers/pear-skin.png",
+      "sha256": "88eb361d66e3e06ca771f61afa8fc2ef79d70331ef6c38a6c32eeb9e6c794672"
+    },
+    {
+      "id": "pear-outline",
+      "name": "pear-outline",
+      "visible": true,
+      "bounds": [
+        279,
+        256,
+        590,
+        672
+      ],
+      "file": "layers/pear-outline.png",
+      "sha256": "6f8df33c389058e10b3753270d1a33745cfbf97f2248b42b4cf41e967524c010"
+    }
+  ],
+  "paper": "layers/_paper.png",
+  "artwork": "artwork.png",
+  "source": "scene.json",
+  "artwork_sha256": "14ebfbb17db79d1ed6ae989cfc7ab168f12c344424b5d40abdec5accc683336e",
+  "warnings": [],
+  "runtime": {
+    "python": "3.11.1",
+    "pillow": "12.2.0",
+    "numpy": "2.4.4"
+  },
+  "code_sha256": {
+    "render.py": "f929ffa3b4d48868143d0ed35c941e21063571d53ecdcece7c72620b6ba7dea9",
+    "natural_media.py": "b2467f2ea5c83360b78240b0d6bb4a5c835a69a605c86f74c5f09e373beb854e",
+    "pencil_case_media.py": "ff0d9acbb60e0489da90856facf1601d86add310bdd0315b698fadd13493e6c7",
+    "vendor/penwash_lib.py": "ab6856902d05e8126acd959ce52efe704e13bb349b7f6ac84cf89bb008b3f482"
+  },
+  "upstream": {
+    "url": "https://github.com/Qizhan7/pencil-case",
+    "commit": "9bb75d1bdcd2b3f62edc804d751ac53f43c6c85d",
+    "license": "PolyForm Noncommercial 1.0.0"
+  }
+}

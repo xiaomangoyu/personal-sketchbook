@@ -48,7 +48,7 @@ def check(render=False):
     for row in rows:
         if not (ROOT/row['generator']).is_file(): failures.append(row['id']+': missing generator')
         if not (ROOT/'docs/images'/f"{row['id']}-thumb.jpg").is_file(): failures.append(row['id']+': missing thumbnail')
-    for path in [ROOT/'README.md',ROOT/'SKILL.md',ROOT/'references/render-api.md',ROOT/'references/art-direction.md']:
+    for path in [ROOT/'README.md',ROOT/'SKILL.md',*sorted((ROOT/'references').glob('*.md'))]:
         text=path.read_text()
         links=re.findall(r'(?:src|href)=["\']([^"\']+)["\']',text)+re.findall(r'\]\(([^)]+)\)',text)
         for value in links:
